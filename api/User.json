@@ -1,0 +1,67 @@
+[
+	{
+		"ID": "User1",
+		"Name": "Trần Thị Như Hiếu",
+		"UserName": "HieuTran",
+		"Password": "1234",
+		"Address": "242 Nguyen Hoang, Da Nang",
+		"Phone": "123456789",
+		"Email": "abcd@gmail.com",
+		"DateRegistee": "12/11/2015",
+		"RoleID": "Quanli",
+		"Birthday": "04/04/1995",
+		"Gender": "Nu"
+	},
+	{
+		"ID": "User2",
+		"Name": "Trần Thị Minh Tâm",
+		"UserName": "TamTran",
+		"Password": "1234",
+		"Address": "Quận Cẩm Lệ",
+		"Phone": "123456789",
+		"Email": "tamtran@gmail.com",
+		"DateRegistee": "12/11/2015",
+		"RoleID": "Quanli",
+		"Birthday": "01/07/1995",
+		"Gender": "Nu"
+	},
+	{
+		"ID": "User3",
+		"Name": "Phạm Thị Anh Thư",
+		"UserName": "ThuPham",
+		"Password": "1234",
+		"Address": "11 Hương Hải Thiền Sư",
+		"Phone": "123456789",
+		"Email": "thupham@gmail.com",
+		"DateRegistee": "12/11/2015",
+		"RoleID": "Quanli",
+		"Birthday": "18/02/1995",
+		"Gender": "Nu"
+	},
+	{
+		"ID": "User4",
+		"Name": "Phạm Thị Thanh Thảo",
+		"UserName": "Uthamho",
+		"Password": "1234",
+		"Address": "street",
+		"Phone": "123456789",
+		"Email": "utkho@gmail.com",
+		"DateRegistee": "12/11/2015",
+		"RoleID": "Quanli",
+		"Birthday": "22/07/1995",
+		"Gender": "Nu"
+	},
+	{
+		"ID": "User5",
+		"Name": "Nguyễn Thị Anh Đào",
+		"UserName": "DaoNguyen",
+		"Password": "1234",
+		"Address": "Tiệm vàng Nhân",
+		"Phone": "123456789",
+		"Email": "daonguyen@gmail.com",
+		"DateRegistee": "12/11/2015",
+		"RoleID": "Quanli",
+		"Birthday": "21/07/1995",
+		"Gender": "Nu"
+	}
+]

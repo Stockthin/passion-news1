@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Passion News</title>
+
+    <!-- Bootstrap -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- for fontawesome icon css file -->
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+    <!-- for content animate css file -->
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <!-- google fonts  -->
+    <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'> 
+     <!-- slick slider css file -->
+    <link href="assets/css/slick.css" rel="stylesheet">     
+    <!-- <link href="css/theme-red.css" rel="stylesheet"> -->  
+      <link href="assets/css/theme.css" rel="stylesheet">   
+    <!-- main site css file -->    
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <!--Chỉnh sửa css-->
+    <link href="assets/css/style-2.css" rel="stylesheet"> 
+  </head>
+  <body >
+    <!--Preloader and scrollToTop-->
+    <div ng-include="'app/components/preloader-scrollTop/preloader-scrollTop.html'" class="preloader-scrollTop" ></div>
+    
+    <!--Header + Content-->
+    <div class="container">
+      <!-- Top menu -->
+      <div ng-include="'app/components/common/header/top-menu/top-menu.html'"></div>
+      <!-- END -->
+
+      <!-- Menu chính -->
+      <div ng-include="'app/components/common/header/main-menu/main-menu.html'"></div>  
+      
+      <!--Bắt đầu content-->
+      <section id="mainContent">
+        <div ui-view></div>        
+      </section>
+    </div> 
+    <!-- /.container -->
+
+    <!--Footer-->
+    <footer id="footer" ng-include="'app/components/common/footer/footer.html'"></footer>
+
+    <!-- jQuery google CDN Library -->
+    <script src="assets/js/jquery/jquery.min.js"></script> 
+    <!-- For content animatin  -->
+    <script src="assets/js/wow.min.js"></script>
+    <!-- bootstrap js file -->
+    <script src="assets/js/bootstrap/bootstrap.min.js"></script> 
+    <!-- slick slider js file -->
+    <script src="assets/js/slick.min.js"></script> 
+    
+      <!-- custom js file include -->
+    <script src="assets/js/custom.js"></script> 
+
+    <!--AngularJS-->
+    <script type="text/javascript" src="assets/js/angular/angular.js"></script>
+    <script type="text/javascript" src="assets/js/angular/angular-ui-router.js"></script>
+    <script type="text/javascript" src="assets/js/angular/angular-cookies.js"></script>
+    <script type="text/javascript" src="app/app-module.js"></script>
+    <script type="text/javascript" src="app/app-routes.js"></script>
+    <script type="text/javascript" src="app/controller.js"></script>
+  </body>
+</html>
+
+ <!-- <script type="text/javascript" src="assets/js/angular/angular.js"></script>
+        <script type="text/javascript" src="assets/js/angular/angular-ui-router.js"></script>
+        <script type="text/javascript" src="assets/js/angular/angular-cookies.js"></script>
+        <script type="text/javascript" src="app/app-module.js"></script>
+        <script type="text/javascript" src="app/app-routes.js"></script>
+        <script type="text/javascript" src="app/controller.js"></script> -->

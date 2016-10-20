@@ -1,0 +1,34 @@
+[
+	{
+		"IDCategory": "CG_01",
+		"NameCategory":"Star"
+	},
+	{
+		"IDCategory": "CG_02",
+		"NameCategory":"Muzik"
+	},
+	{
+		"IDCategory": "CG_03",
+		"NameCategory":"Film"
+	},
+	{
+		"IDCategory": "CG_04",
+		"NameCategory":"Học Đường"
+	},
+	{
+		"IDCategory": "CG_05",
+		"NameCategory":"Thế Giới"
+	},
+	{
+		"IDCategory": "CG_06",
+		"NameCategory":"Fashion"
+	},
+	{
+		"IDCategory": "CG_07",
+		"NameCategory":"Xã Hội"
+	},
+	{
+		"IDCategory": "CG_08",
+		"NameCategory":"Giải Trí"
+	}
+]
