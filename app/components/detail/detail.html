@@ -1,157 +1,181 @@
-<div class="content_bottom">
-            <div class="col-lg-8 col-md-8">
-            <!-- start content bottom left -->
-              <div class="content_bottom_left">                
-                <div class="single_page_area">
-                  <ol class="breadcrumb">
+<!-- start main content bottom -->
+<div class="content_bottom" ng-controller="detailCtrl as detail">
+    <!-- <div>{{tieude2}}</div> -->
+    <div class="col-lg-8 col-md-8">
+        <!-- start content bottom left -->
+        <div class="content_bottom_left">
+            <div class="single_page_area">
+                <ol class="breadcrumb">
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">Technology</a></li>
-                    <li class="active">Duis quis erat non nunc fringilla </li>
-                  </ol>
-                  <h2 class="post_titile">Duis quis erat non nunc fringilla </h2>
-                  <div class="single_page_content">
+                    <li><a href="#">{{name_category}}</a></li>
+                    <li class="active">{{new.Title | limitTo:50}}...</li>
+                </ol>
+                <h2 class="post_titile">{{new.Title}}</h2>
+                <div class="single_page_content">
                     <div class="post_commentbox">
-                      <a href="#"><i class="fa fa-user"></i>Wpfreeware</a>
-                      <span><i class="fa fa-calendar"></i>6:49 AM</span>
-                      <a href="#"><i class="fa fa-tags"></i>Technology</a>
-                    </div>
-                    <img class="img-center" src="assets/img/news/550x330x3.jpg" alt="img">
-                    <p>Nunc tincidunt, elit non cursus euismod, lacus augue ornare metus, egestas imperdiet nulla nisl quis mauris. Suspendisse a pharetra urna. Morbi dui lectus, pharetra nec elementum eget, vulputate ut nisi. Aliquam accumsan, nulla sed feugiat vehicula, lacus justo semper libero, quis porttitor turpis odio sit amet ligula. Duis dapibus fermentum orci, nec malesuada libero vehicula ut. Integer sodales, urna eget interdum eleifend, nulla nibh laoreet nisl, quis dignissim mauris dolor eget mi. Donec at mauris enim. Duis nisi tellus, adipiscing a convallis quis, tristique vitae risus. Nullam molestie gravida lobortis. Proin ut nibh quis felis auctor ornare. Cras ultricies, nibh at mollis faucibus, justo eros porttitor mi, quis auctor lectus arcu sit amet nunc. Vivamus gravida vehicula arcu, vitae vulputate augue lacinia faucibus.</p>
-                    <blockquote>
-                      Donec volutpat nibh sit amet libero ornare non laoreet arcu luctus. Donec id arcu quis mauris euismod placerat sit amet ut metus. Sed imperdiet fringilla sem eget euismod. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque adipiscing, neque ut pulvinar tincidunt, est sem euismod odio, eu ullamcorper turpis nisl sit amet velit. Nullam vitae nibh odio, non scelerisque nibh. Vestibulum ut est augue, in varius purus.
-                    </blockquote>
-                    <p>Quisque ligulas ipsum, euismod atras vulputate iltricies etri elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla nunc dui, tristique in semper vel, congue sed ligula. Nam dolor ligula, faucibus id sodales in, auctor fringilla libero. Pellentesque pellentesque tempor tellus eget hendrerit. Morbi id aliquam ligula. Aliquam id dui sem. Proin rhoncus consequat nisl, eu ornare mauris tincidunt vitae. Vestibulum sodales ante a purus volutpat euismod. Proin sodales quam nec ante sollicitudin lacinia. Ut egestas bibendum tempor. Morbi non nibh sit amet ligula blandit ullamcorper in nec risus. Pellentesque fringilla diam faucibus tortor bibendum vulputate. Etiam turpis urna, rhoncus et mattis ut, dapibus eu nunc. Nunc sed aliquet nisi. Nullam ut magna non lacus adipiscing volutpat. Aenean odio mauris, consectetur quis consequat quis, blandit a nunc. Sed orci erat, placerat ac interdum ut, suscipit eu augue. Nunc vitae mi tortor. Ut vel justo quis lectus elementum </p>
-                    <ul>
-                      <li>Nunc sed aliquet nisi. Nullam ut magna</li>
-                      <li>Nunc sed aliquet nisi. Nullam ut magna non lacus adipiscing volutpat</li>
-                      <li>Nunc sed aliquet nisi. Nullam ut magna</li>
-                      <li>Nunc sed aliquet nisi. Nullam ut magna non lacus adipiscing volutpat</li>
-                      <li>Nunc sed aliquet nisi. Nullam ut magna</li>
-                      <li>Nunc sed aliquet nisi. Nullam ut magna non</li>
-                    </ul>
-                    <button class="btn">Default</button>
-                    <button class="btn btn-primary">Primary</button>
-                    <button class="btn btn-success">Success</button>
-                    <button class="btn btn-info">Info</button>
-                    <button class="btn btn-warning">Warning</button>
-                    <button class="btn btn-danger">Danger</button>
-                  </div>                 
-                </div>                  
-              </div><!--End content_bottom_left--> 
-        
-                
-        
-              <!-- start cmt post-->
-              <div class="similar_post">
-               
+                        <a href="#"><i class="fa fa-user"></i>Wpfreeware</a>
+                        <span><i class="fa fa-calendar"></i>6:49 AM</span>
+                        <a href="#"><i class="fa fa-tags"></i>{{name_category}}</a>
 
-                <form>
-                  <!--ava-->
-                   <div class="col-xs-1 col-sm-1">
-                   <div class="avartar">
-                      <a href = " " title = "avatar">
-                        <img src="assets/img/news/ava.jpg" style = "width: 70px; height: 74px;"/>
-                      </a>
+
+                    </div>
+                    <div class="vote_up">
+                        <a href="#"> <i class="fa fa-thumbs-up" aria-hidden="true"> Like</i></a>
+                        <a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i> Share</a>
+                    </div>
+                    <img style="width: 100%;" class="img-center" src="{{new.UrlImage}}" alt="img">
+                    <p><strong>{{new.Summary}}</strong></p>
+                    <!--  <blockquote>
+                      Donec volutpat nibh sit amet libero ornare non laoreet arcu luctus. Donec id arcu quis mauris euismod placerat sit amet ut metus. Sed imperdiet fringilla sem eget euismod. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque adipiscing, neque ut pulvinar tincidunt, est sem euismod odio, eu ullamcorper turpis nisl sit amet velit. Nullam vitae nibh odio, non scelerisque nibh. Vestibulum ut est augue, in varius purus.
+                    </blockquote> -->
+                    <p>{{new.Content}}</p>
+                    <h3>Related News</h3>
+                    <ul>
+                        <li ng-repeat="other_new in other_news"><a ui-sref="detail({id : other_new.IDNews})">{{other_new.Title}}</a></li>
+
+                    </ul>
+                    <h3>Tags</h3>
+                    <button class="btn btn-defaut">Tag1</button>
+                    <button class="btn btn-defaut">Tag2</button>
+                    <button class="btn btn-defaut">Tag3</button>
+                    <button class="btn btn-defaut">Tag4</button>
+                </div>
+
+            </div>
+            <div class="vote_down">
+                <a href="#"> <i class="fa fa-thumbs-up" aria-hidden="true"> Like</i></a>
+                <a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i> Share</a>
+            </div>
+            <!--End content_bottom_left-->
+
+        </div>
+
+
+        <!-- start cmt post-->
+        <div class="similar_post">
+
+
+            <form>
+                <!--ava-->
+                <div class="col-xs-1 col-sm-1">
+                    <div class="avartar">
+                        <a href=" " title="avatar">
+                            <img src="assets/img/news/ava.jpg" style="width: 70px; height: 74px;" />
+                        </a>
                     </div>
                 </div>
                 <div class="col-xs-11 col-sm-11">
-                  <!--button-->
+                    <!--button-->
                     <div class="cmt">
-                      <div class = "button">
-                        <ul>
-                          <li><input type = "button" title = "In đậm" value = "B" style = "font-weight:bold"/></li>
-                          <li><input type = "button" title = "In nghiêng" value = "I" style = "font-style:italic"/></li>
-                          <li><input type = "button" title = "Gạch chân" value = "U" style = "text-decoration:underline"/></li>
-                         
-                        </ul>
-                      </div>
-                   
-                    <!--textbox-->
-                    <div class="textbox">
-                    <textarea placeholder="Bạn muốn nói gì?"  title="Bạn muốn nói gì?" ></textarea>
+                        <div class="button">
+                            <ul>
+                                <li>
+                                    <input type="button" title="In đậm" value="B" style="font-weight:bold" />
+                                </li>
+                                <li>
+                                    <input type="button" title="In nghiêng" value="I" style="font-style:italic" />
+                                </li>
+                                <li>
+                                    <input type="button" title="Gạch chân" value="U" style="text-decoration:underline" />
+                                </li>
+
+                            </ul>
+                        </div>
+
+                        <!--textbox-->
+                        <div class="textbox">
+                            <textarea placeholder="Bạn muốn nói gì?" title="Bạn muốn nói gì?"></textarea>
+                        </div>
+
+                        <!-- send -->
+                        <div class="submit">
+                            <button type="button" class="btn btn-success">Comment</button>
+                        </div>
                     </div>
-                    
-                    <!-- send -->
-                    <div class = "submit">
-                      <button type="button" class="btn btn-success">Comment</button> 
-                    </div>
-                  </div>
-                  
+
                 </div>
-                   
-                    
-                  
-                </form>
-              </div>
-              <!-- End cmt post-->
+
+
+
+            </form>
+
+        </div>
+        <!-- start post cmt-->
+        <div class="cmt_post">
+            <div class="col-xs-1 col-sm-1">
+                <div class="avartar">
+                    <a href=" " title="avatar">
+                        <img src="assets/img/news/ava.jpg" style="width: 70px; height: 74px;" />
+                    </a>
+                </div>
             </div>
-            <!-- start content bottom right -->
-            <div class="col-lg-4 col-md-4">
-              <div class="content_bottom_right">
-                <!-- start single bottom rightbar -->
-                <div class="single_bottom_rightbar">
-                  <h2>Hot News</h2>
-                  <ul class="small_catg popular_catg wow fadeInDown">
-                    <li>
-                      <div class="media wow fadeInDown">
-                        <a href="#" class="media-left">
-                          <img alt="img" src="assets/img/news/112x112.jpg">
-                        </a>
-                        <div class="media-body">
-                          <h4 class="media-heading"><a href="#">Duis condimentum nunc pretium lobortis </a></h4> 
-                           <p>Nunc tincidunt, elit non cursus euismod, lacus augue... </p>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="media wow fadeInDown">
-                        <a href="#" class="media-left">
-                          <img alt="img" src="assets/img/news/112x112.jpg">
-                        </a>
-                        <div class="media-body">
-                          <h4 class="media-heading"><a href="#">Duis condimentum nunc pretium lobortis </a></h4> 
-                          <p>Nunc tincidunt, elit non cursus euismod, lacus augue... </p>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="media wow fadeInDown">
-                        <a href="#" class="media-left">
-                          <img alt="img" src="assets/img/news/112x112.jpg">
-                        </a>
-                        <div class="media-body">
-                          <h4 class="media-heading"><a href="#">Duis condimentum nunc pretium lobortis </a></h4> 
-                          <p>Nunc tincidunt, elit non cursus euismod, lacus augue... </p>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="media wow fadeInDown">
-                        <a href="#" class="media-left">
-                          <img alt="img" src="assets/img/news/112x112.jpg">
-                        </a>
-                        <div class="media-body">
-                          <h4 class="media-heading"><a href="#">Duis condimentum nunc pretium lobortis </a></h4> 
-                          <p>Nunc tincidunt, elit non cursus euismod, lacus augue... </p>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="media wow fadeInDown">
-                        <a href="#" class="media-left">
-                          <img alt="img" src="assets/img/news/112x112.jpg">
-                        </a>
-                        <div class="media-body">
-                          <h4 class="media-heading"><a href="#">Duis condimentum nunc pretium lobortis </a></h4> 
-                          <p>Nunc tincidunt, elit non cursus euismod, lacus augue... </p>
-                        </div>
-                      </div>
-                    </li>
-                  </ul>
-                </div> <!-- End single bottom rightbar -->
-                <!-- start single bottom rightbar -->
-                <!-- End single bottom rightbar -->
-               
-            
+            <div class="col-xs-11 col-sm-11">
+                <!--button-->
+                <div class="cmt">
+                    <div class="user-infor">
+                        <ul>
+                            <li><a href=" ">Jul</a></li>
+                            <li>|</li>
+                            <li><a href=" ">5 minutes ago</a></li>
+
+                        </ul>
+                    </div>
+
+                    <div class="user-cmt">
+                        <p>Captain Teemo is on duty</p>
+                    </div>
+
+                    <!-- send -->
+                    <div class="submit">
+                        <button type="button" class="btn btn-success">Reply</button>
+                        <button type="button" class="btn btn-success"><i class="fa fa-heart" aria-hidden="true"></i></button>
+                    </div>
+                </div>
+
             </div>
-          </div>
+            <div class="textbox">
+                <textarea placeholder="@Jul:" title="Bạn muốn nói gì?"></textarea>
+            </div>
+            <div class="clr"></div>
+
+            <!-- send-->
+            <div class="submit">
+                <button type="button" class="btn btn-success">Send</button>
+            </div>
+
+        </div>
+        <!-- End post cmt  -->
+
+
+    </div>
+    <!-- start content bottom right -->
+    <div class="col-lg-4 col-md-4" style="position:relative;">
+
+        <div class="content_bottom_right">
+            <!-- start single bottom rightbar -->
+            <div class="single_bottom_rightbar">
+                <h2>Hot News</h2>
+                <ul class="small_catg popular_catg wow fadeInDown">
+                    <li ng-repeat="hotnew in hotnews">
+                        <div class="media wow fadeInDown">
+                            <a ui-sref="detail({id : hotnew.IDNews})" class="media-left">
+                                <img style="width: 100%; height:100px;" alt="img" src="{{hotnew.UrlImage}}">
+                            </a>
+                            <div class="media-body">
+                                <h4 class="media-heading"><a ui-sref="detail({id : hotnew.IDNews})">{{hotnew.Title | limitTo : 50}}...</a></h4>
+                                <p>{{hotnew.Summary | limitTo : 50}}...</p>
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+            <!-- End single bottom rightbar -->
+            <!-- start single bottom rightbar -->
+            <!-- End single bottom rightbar -->
+
+
+        </div>
+    </div>
+</div>
+<!-- start content bottom right -->
