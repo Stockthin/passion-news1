@@ -1,10 +1,11 @@
 var gulp = require('gulp');
 var browserSync = require('browser-sync');
 
+
 var reload = browserSync.reload;
 var paths = {
 	css: [
-    'app/assets/css/*.css',
+    'assets/css/*.css',
     'app/components/**/*.css'
   ],
   html: [
@@ -13,8 +14,10 @@ var paths = {
   ],
 	js: [
     'app/*.js',
-    'app/assets/js/*.js',
-    'app/components/**/*.js'
+    'assets/js/*.js',
+    'app/components/**/*.js',
+    'app/services/*.js',
+    '*.js'
   ]	
 };
 

@@ -20,23 +20,28 @@
       <link href="assets/css/theme.css" rel="stylesheet">   
     <!-- main site css file -->    
     <link href="assets/css/style.css" rel="stylesheet">
+    <!--Css about us-->
+    <link href="app/components/about_us/about_us.css" rel="stylesheet">
+     <!--Css User profile-->
+    <link href="app/components/user_profile/user_profile.css" rel="stylesheet">
 
-    <!--Chỉnh sửa css-->
-    <link href="assets/css/style-2.css" rel="stylesheet"> 
+   
   </head>
-  <body >
+  <body ng-controller="mainCtrl">
     <!--Preloader and scrollToTop-->
     <div ng-include="'app/components/preloader-scrollTop/preloader-scrollTop.html'" class="preloader-scrollTop" ></div>
     
     <!--Header + Content-->
     <div class="container">
       <!-- Top menu -->
-      <div ng-include="'app/components/common/header/top-menu/top-menu.html'"></div>
+      <div ng-include="'app/components/common/header/top_menu/top_menu.html'"></div>
       <!-- END -->
 
       <!-- Menu chính -->
-      <div ng-include="'app/components/common/header/main-menu/main-menu.html'"></div>  
+      <div ng-include="'app/components/common/header/main_menu/main_menu.html'"></div>  
       
+      <!-- <div ui-view="avatar_custom"></div>
+      <div ui-view="view"></div> -->
       <!--Bắt đầu content-->
       <section id="mainContent">
         <div ui-view></div>        
@@ -63,8 +68,10 @@
     <script type="text/javascript" src="assets/js/angular/angular.js"></script>
     <script type="text/javascript" src="assets/js/angular/angular-ui-router.js"></script>
     <script type="text/javascript" src="assets/js/angular/angular-cookies.js"></script>
+    <script type="text/javascript" src="assets/js/angular/angular-resource.min.js"></script>
     <script type="text/javascript" src="app/app-module.js"></script>
     <script type="text/javascript" src="app/app-routes.js"></script>
+    <script type="text/javascript" src="app/services/service.js"></script>
     <script type="text/javascript" src="app/controller.js"></script>
   </body>
 </html>

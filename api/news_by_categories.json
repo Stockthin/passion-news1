@@ -1,0 +1,183 @@
+[
+	{
+		"IDCategory": "CG_01",
+		"NameCategory":"Star",
+	   	"news": [
+		    {
+		       "IDNews":"N_01",
+				"Title": "Sao Thái Lan đau buồn, bày tỏ thương tiếc trước sự ra đi của Quốc Vương Bhumibol",
+				"Summary":"Hàng loạt những ngôi sao có tầm ảnh hưởng nhất của làng giải trí xứ Chùa Vàng đang bày tỏ sự xót thương vô hạn khi quốc vương Thái Lan Bhumibol Adulyadej băng hà.",
+				"UrlImage":"assets/img/news/h1.jpg",
+				"Date":"14/10/2016",
+				"IDUser":"User1",
+				"Content":"Đất nước Thái Lan vừa đón nhận tin buồn khi Nhà Vua Bhumibol Adulyadej đã băng hà vào chiều 13-10 sau thời gian bệnh nặng và được điều trị bệnh tại Bangkok. Quốc Vương Bhumibol Adulyadej được mọi tầng lớp nhân dân Thái Lan kính trọng, chính vì vậy, sự ra đi của ngài khiến toàn thể dân chúng Thái Lan vô cùng đau buồn và xót thương. Trên trang mạng xã hội Instagram, hàng loạt nghệ sĩ hoạt động trong làng giải trí đều bày tỏ sự tiếc thương vô hạn với vị vua tài năng, tận tuỵ của đất nước. Những hình ảnh thân thương, những dòng nhắn thiết tha của các nghệ sĩ cầu mong cho vị vua được thanh thản về nơi an nghỉ cuối cùng.",
+				"IDCategory":"CG_01",
+				"IDTag":""
+		    },
+		    {
+		       "IDCategory": "CG_01",
+				"NameCategory":"Star",
+				"IDNews":"N_09",
+				"Title": "4 trai đẹp Việt không làm gì cũng cứ hot chỉ vì... ngày càng phong độ và nam tính",
+				"Summary":"Trai đẹp mà, chỉ cần lúc nào cũng giữ nguyên phong độ là đã đủ đông fan rồi, chứ cứ ngày càng nam tính và cuốn hút như 4 anh chàng này thì bảo sao không hot mãi!",
+				"UrlImage":"assets/img/news/h9.jpg",
+				"Date":"14/10/2016",
+				"IDUser":"User1",
+				"Content":"Nói thế này không biết có phải thiên vị quá hay không, nhưng so với hot girl Việt - ngày càng nhiều và có phần càng dễ... quên, thì hot boy Việt, trai đẹp Việt lại khác, anh chàng nào cũng được nhắc đi nhắc lại mãi. Chưa cần có hoạt động gì thường xuyên, nổi bật hay to tát đâu, cứ giữ nguyên phong độ điển trai là đã đủ đông fan lắm rồi. Như 4 anh chàng dưới đây này, mỗi lần nhìn ảnh người ta lại phải bất ngờ vì chẳng hiểu sao họ cứ ngày càng nam tính và cuốn hút hơn rất nhiều thế? Bảo sao không hot!",
+				"IDCategory":"CG_01",
+				"IDTag":""
+		    }
+	   ]
+	},
+	{
+		"IDCategory": "CG_02",
+		"NameCategory":"Muzik",
+	   	"news": [
+		    {
+		    	"IDNews":"N_02",
+				"Title": "Trần Kiều Ân đọ sắc cùng dàn mỹ nhân, Hoa hậu Hồng Kông suýt vồ ếch trên thảm đỏ",
+				"Summary":"Lễ trao giải quy tụ dàn sao đình đám như Trần Kiều Ân, Trương Hinh Dư, Lý Tiểu Lộ, Hoa hậu Hồng Kông 2004 Từ Tử San,... cùng khoe sắc trên thảm đỏ.",
+				"UrlImage":"assets/img/news/h2.jpg",
+				"Date":"14/10/2016",
+				"IDUser":"User2",
+				"Content":"Tối ngày 13-10 vừa qua, lễ trao giải Fashion Star Show 2016 đã được tổ chức tại sân vận động công nhân Bắc Kinh – Trung Quốc. Tham gia vào sự kiện này là những tên tuổi đang lên của Cbiz như Trần Kiều Ân, Trương Hinh Dư, Lý Tiểu Lộ, Trương Nhất Sơn, Từ Hải Kiều, Thích Vy,… Hoa hậu Hồng Kông 2004 Từ Tử San cũng có mặt tại đây, tuy nhiên, người đẹp có khoảnh khắc khiến mọi người phải hú hồn khi suýt vấp ngã tại thảm đỏ sự kiện.",
+				"IDCategory":"CG_02",
+				"IDTag":""
+		    },
+		    {
+		     	"IDCategory": "CG_02",
+				"NameCategory":"Muzik",
+				"IDNews":"N_10",
+				"Title": "Tại sao đến tận bây giờ, Angela Baby vẫn bị gán mác Mỹ nhân thủ đoạn của làng giải trí Hoa ngữ?",
+				"Summary":"Hơn 10 năm gia nhập làng giải trí cũng là từng ấy khoảng thời gian Angela Baby bị gán cho nhiều tội danh mà theo netizen khó có thể dung thứ được.",
+				"UrlImage":"assets/img/news/h10.jpg",
+				"Date":"14/10/2016",
+				"IDUser":"User4",
+				"Content":"Năm 2015, bảng bình chọn nghệ sĩ bị ghét nhất làng giải trí Hoa ngữ được công bố. Điều đáng nói, Angela Baby là nghệ sĩ nữ đứng đầu bảng xếp hạng này, chỉ sau Trần Hách - kẻ ngoại tình không thể yêu thương nổi. Kể từ khi ra nhập làng giải trí, Angela Baby là một trong số những nghệ sĩ sở hữu lượng anti fan hùng hậu. Vậy, tại sao, đã hơn 10 năm trôi qua, vì những lý do gì mà Angela Baby luôn bị gán mác Mỹ nhân thủ đoạn của làng giải trí đến vậy?",
+				"IDCategory":"CG_02",
+				"IDTag":""
+		    }
+	   ]
+	},
+	{
+		"IDCategory": "CG_03",
+		"NameCategory":"Film",
+	   	"news": [
+		    {
+		    	"IDNews":"N_03",
+				"Title": "Mẹ vô tình đẩy xe nôi vào thang máy không có buồng, bé gái 6 tuần tuổi chết thảm",
+				"Summary":"Một bé gái 6 tuần tuổi người Mỹ đã thiệt mạng oan uổng sau khi người mẹ vô tình đẩy nôi của cô bé vào buồng thang máy không có thang.",
+				"UrlImage":"assets/img/news/h3.jpg",
+				"Date":"14/10/2016",
+				"IDUser":"User2",
+				"Content":"Theo lực lượng cảnh sát thành phố New York, vụ tai nạn đau lòng xảy ra khi cô Aberaqed Al-Rabah đang đứng chờ thang máy cùng cô con gái 6 tuần tuổi Areej Ali ở tầng thứ 23 của tòa nhà chung cư ở khu Coney Island, Brooklyn.Khi cánh cửa thang máy mở cửa, Al-Rabah đã nhanh tay đẩy chiếc nôi có con nằm trong vào thang máy mà không hề nhận ra rằng đó hoàn toàn là một trục thang máy không có buồng. Kết quả, cả 2 mẹ con cùng ngã lộn nhào, rơi tự do 8 tầng xuống nóc buồng thang máy ở tầng 17. Tại đây, các nhân cứu hộ đã nhanh chóng giải cứu 2 mẹ con gặp nạn. Cô bé Areej Ali sau đó đã được thông báo tử vong tại bệnh viện Coney Island. Trong khi đó, mẹ cô bé không bị thương quá nặng.",
+				"IDCategory":"CG_03",
+				"IDTag":""
+		    },
+		    {
+		     	"IDCategory": "CG_03",
+				"NameCategory":"Film",
+				"IDNews":"N_11",
+				"Title": "Đâu mới là vòng eo thực sự của Mai Phương Thúy khi nhìn những bức ảnh thế này?",
+				"Summary":"Một vòng eo thon gọn, mịn màng hay chiếc bụng ngấn mỡ, cơ không săn chắc, đâu mới là vòng eo thực sự của Mai Phương Thúy?",
+				"UrlImage":"assets/img/news/h11.jpg",
+				"Date":"14/10/2016",
+				"IDUser":"User1",
+				"Content":"Sáng 23/10, Mai Phương Thúy cùng gần 700 vận động viên tham dự giải Longbien Marathon 2016 tại Hà Nội. Những hình ảnh trong buổi chạy marathon sáng nay được người đẹp và nhiều báo chí đăng tải. Tuy nhiên, một số bức hình của Mai Phương Thúy đã được chứng minh là can thiệp photoshop quá đà để có vòng eo thon gọn. Trong khi, từ một vài nguồn ảnh khác, Mai Phương Thúy lộ rõ bụng ngấn mỡ , không được săn chắc, thon gọn và nhan sắc khá nhợt nhạt. Ngay cả cơ thể cô cũng cho thấy Mai Phương Thúy đang có một lượng mỡ dư thừa. Dân tình thắc mắc, đâu mới là thân hình thật sự của Hoa hậu Mai Phương Thúy sau những bức ảnh khác nhau một trời một vực thế này. rước Mai Phương Thúy, có không ít người đẹp Vbiz thường xuyên được can thiệp photoshop quá đà để có được những bức ảnh lung linh, chân dài, dáng thon. Bản thân Mai Phương Thúy cũng đã có những bức ảnh photoshop khiến cô trở nên kì quặc.",
+				"IDCategory":"CG_03",
+				"IDTag":""
+		    }
+	   ]
+	},
+	{
+		"IDCategory": "CG_04",
+		"NameCategory":"Học Đường",
+	   	"news": [
+		    {
+		    	"IDNews":"N_06",
+				"Title": "Đây là những kỹ năng cần thiết cho sinh viên",
+				"Summary":"Những kỹ năng cần thiết sau sẽ là bước đệm giúp bạn vững bước trên giảng đường đại học và con đường lập nghiệp sau này.",
+				"UrlImage":"assets/img/news/h6.jpg",
+				"Date":"14/10/2016",
+				"IDUser":"User4",
+				"Content":"Giảng đường đại học khác rất nhiều so với thời cấp 3, khi mà từ giảng viên cho đến nội dung bài học đều có sự thay đổi. Và dĩ nhiên là cách tiếp thu kiến thức ở giảng đường đại học cũng hoàn toàn khác, không còn kiểu thầy đọc trò chép ấy nữa, thay vào đó là sinh viên tự chủ động trong việc lĩnh hội kiến thức cũng như cần tương tác nhiều hơn đối với giảng viên. Có rất nhiều sự thay đổi mà kéo theo đó bạn cũng phải thay đổi bản thân mình để có thể hòa nhập với cuộc sống mới. Những kỹ năng cần thiết sau để sẽ là bước đệm giúp bạn vững bước trên giảng đường đại học và con đường lập nghiệp sau này.",
+				"IDCategory":"CG_04",
+				"IDTag":""
+		    }
+	   ]
+	},
+	{
+		"IDCategory": "CG_05",
+		"NameCategory":"Thế Giới",
+	   	"news": [
+		    {
+		    	"IDNews":"N_07",
+				"Title": "Những việc sinh viên cần làm ngay và liền sau khi tốt nghiệp đại học",
+				"Summary":"Đôi lúc bạn thầm trách thần may mắn sao có thể bỏ rơi đứa con tội nghiệp của người bởi trong khi những đứa khác đã có công việc ổn định thì giờ đây có một kẻ đang ăn không ngồi rồi.",
+				"UrlImage":"assets/img/news/h7.jpg",
+				"Date":"14/10/2016",
+				"IDUser":"User4",
+				"Content":"Sau khi cầm tấm bằng cử nhân trong tay, chúng ta hoang mang giữa thị trường việc làm ngày một đi xuống như hiện nay, cuộc đua này cảm tưởng khốc liệt như cuộc chạy đua vào nhà trắng. Đôi lúc bạn thầm trách thần may mắn sao có thể bỏ rơi đứa con tội nghiệp của người bởi trong khi những đứa khác đã có công việc ổn định thì giờ đây có một kẻ đang ăn không ngồi rồi. Nhưng mọi việc trên đời đều có 2 mặt của nó, sau khi đọc hết bài này bạn sẽ phải suy nghĩ lại đấy.",
+				"IDCategory":"CG_05",
+				"IDTag":""
+		    }
+	   ]
+	},
+	{
+		"IDCategory": "CG_06",
+		"NameCategory":"Fashion",
+	   	"news": [
+		    {
+		    	"IDNews":"N_08",
+				"Title": "Không thể tin nổi! U19 Việt Nam chính thức giành vé dự World Cup",
+				"Summary":"Pha lập công của Trần Thành ở phút 72 đã giúp Việt Nam vượt qua Bahrain để lọt vào vòng bán kết U19 châu Á, qua đó chính thức giành vé dự World Cup U20.",
+				"UrlImage":"assets/img/news/h8.jpg",
+				"Date":"14/10/2016",
+				"IDUser":"User1",
+				"Content":"Theo quy định, 4 đội giành vé vào bán kết VCK U19 châu Á sẽ có suất dự giải U20 World Cup 2017 diễn ra vào năm sau tại Hàn Quốc. Sau những bất ngờ ở vòng bảng, U19 Việt Nam tiếp tục tạo nên cơn địa chấn trên đất Bahrain. Gặp chủ nhà U19 Bahrain ở tứ kết, U19 Việt Nam bị đánh giá thấp hơn về đẳng cấp, bên cạnh đó thầy trò HLV Hoàng Anh Tuấn còn phải chịu sức ép từ khán giả nước chủ nhà. Nhưng khi trận đấu diễn ra, mọi khoảng cách đều bị xóa nhòa. U19 Việt Nam nhập cuộc đầy tự tin và chơi ăn miếng trả miếng trước U19 Bahrain. Không hề có sự chênh lệch về đẳng cấp cũng như thể lực, thậm chí U19 Việt Nam còn là đội tạo ra nhiều cơ hội thực sự nguy hiểm hơn về phía khung thành đội chủ nhà. Thế trận giằng co đã được phá vỡ ở phút 72 khi Trần Thành có pha đệm lòng tung lưới U19 Bahrain mở tỷ số cho U19 Việt Nam. Sau bàn thắng, U19 Việt Nam kiên cường bảo vệ thành quả để giành tấm vé vào bán kết, kèm theo đó là suất dự VCK U20 World Cup 2017. Sau Futsal giành vé dự FIFA Futsal World Cup, các cầu thủ U19 Việt Nam cũng làm được điều tương tự ở sân cỏ. Mặc dù chiến tích được lập nên ở cấp độ trẻ, nhưng nó trở thành một cột mốc lịch sử huy hoàng của bóng đá Việt Nam. Chúc mừng thầy trò HLV Hoàng Anh Tuấn và người hâm mộ Việt Nam sẽ có một đêm mất ngủ.",
+				"IDCategory":"CG_06",
+				"IDTag":""
+		    }
+	   ]
+	},
+	{
+		"IDCategory": "CG_07",
+		"NameCategory":"Xã Hội",
+	   	"news": [
+		    {
+		    	"IDNews":"N_12",
+				"Title": "Tom Cruise gặp lại bé Suri sau thời gian dài xa cách và đã có tình yêu mới",
+				"Summary":"Theo Us Weekly, Tom Cruise đã gặp lại cô con gái Suri và cũng tìm được người phụ nữ mới.",
+				"UrlImage":"assets/img/news/h12.jpg",
+				"Date":"14/10/2016",
+				"IDUser":"User1",
+				"Content":"Kể từ sau cuộc chia tay với Katie Holmes, nhiều nguồn tin tin cho biết, Tom Cruise đã không gặp cô con gái Suri suốt vài năm, cũng như không có thời gian tìm tình yêu mới. Nhưng theo Us Weekly mới đưa tin, điều đó đã thay đổi, nam tài tử 54 tuổi gần đây đã dành thời gian cho cô bé và đang hẹn hò với một người phụ nữ Anh.",
+				"IDCategory":"CG_07",
+				"IDTag":""
+		    }
+	   ]
+	},
+	{
+		"IDCategory": "CG_08",
+		"NameCategory":"Giải Trí",
+	   	"news": [
+		    {
+		    	"IDNews":"N_13",
+				"Title": "Sợ điệp viên Nhật Bản, U19 Việt Nam giấu 4 trụ cột",
+				"Summary":"HLV Hoàng Anh Tuấn đã để cho đội trưởng Trọng Đại cùng với 3 trụ cột khác là Tiến Dụng, Trần Thành, Quang Hải tập riêng ở phòng tránh sự quan tâm của báo chí cũng như điệp viên Nhật Bản.",
+				"UrlImage":"assets/img/news/h13.jpg",
+				"Date":"14/10/2016",
+				"IDUser":"User1",
+				"Content":"Trong buổi tập trước trận đấu với U19 Nhật Bản, một lần nữa người ta được chứng kiến sự cẩn thận một cách quá tỉ mỉ của HLV Hoàng Anh Tuấn khi không cho những cầu thủ tốt nhất của đội là thủ quân Trọng Đại cùng Tiến Dụng, Quang Hải, Trần Thành tập luyện cùng đội mà để họ tập trong phòng Gym.",
+				"IDCategory":"CG_08",
+				"IDTag":""
+		    }
+	   ]
+	}
+]
+	
+
+
+
+
+

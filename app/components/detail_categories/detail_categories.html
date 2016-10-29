@@ -1,0 +1,19 @@
+<div  ng-controller="categoriesCtrl">
+	 <ul class="">
+        <!--Nội dung theo danh mục tin-->
+        <li class="col-md-6 col-sm-6 wow fadeInRight" ng-repeat="news in news_by_category">
+			
+            <div>
+                <a ui-sref="detail({id : news.IDNews})" class="design_img  detail_categories"  ng-style="{'background-image': 'url(' + news.UrlImage + ')'}"></a>
+            </div>
+            <h2 style="font-size: 20px;"><a ui-sref="detail({id : news.IDNews})">{{news.Title}}</a></h2>
+            <div class="comments_box">
+                <span class="meta_date">14/12/2013</span>
+                <span class="meta_more"><a ui-sref="detail">Read More...</a></span>
+            </div>
+            <p>{{news.Summary | limitTo : 100}}...</p>
+        </li>
+      
+    </ul>
+   
+</div>
