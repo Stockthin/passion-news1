@@ -1,3 +1,83 @@
-.test2 {
-	color:blue;
-}
+ /*CHANGE PASSWORD*/
+ 
+ h2 {
+     text-align: center;
+     padding-bottom: 7px;
+ }
+ 
+ .change_password .form-horizontal {
+     padding-top: 7px;
+ }
+ 
+ .change_password .form-horizontal .form-group label {
+     text-align: left;
+     font-style: normal;
+ }
+ 
+ .change_password .form-horizontal .submit button {
+     background: #39b54a;
+     border-color: #4cae4c;
+     float: right;
+     margin-bottom: 20px;
+     margin-right: 10px;
+ }
+ 
+ .change_password {
+     background-color: #fff;
+     display: inline-block;
+     float: left;
+     margin-bottom: 20px;
+     padding: 0 15px;
+     width: 100%;
+     margin-top: 20px;
+ }
+ /*POST NEWS*/
+ 
+ .post_news .form {
+     padding-top: 7px;
+ }
+ 
+ .post_news .form .form-group label {
+     font-style: normal;
+     padding-bottom: 13px;
+     font-size: 17px;
+ }
+ 
+ .post_news .form .img input {
+     padding-top: 80px;
+ }
+ 
+ .post_news .form .form-group select {
+     font-style: normal;
+ }
+ 
+ .post_news .form .form-group .describe textarea {
+     min-height: 75px;
+ }
+ 
+ .post_news .form .form-group textarea {
+     min-height: 300px;
+ }
+ 
+ .post_news .form .submit button {
+     background: #39b54a;
+     border-color: #4cae4c;
+     float: right;
+     margin-bottom: 20px;
+     margin-right: 10px;
+ }
+ 
+ .form-group {
+     font-style: italic;
+     padding-top: 20px;
+ }
+ 
+ .post_news {
+     background-color: #fff;
+     display: inline-block;
+     float: left;
+     margin-bottom: 20px;
+     padding: 0 75px;
+     width: 100%;
+     margin-top: 20px;
+ }
