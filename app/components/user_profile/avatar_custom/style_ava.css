@@ -1,19 +1,10 @@
-.background_ava{
-	position: relative;
-}
 
-.background_ava img{
-	width:300px;
-	height:200px;
-
-}
 .avatar-img{
 	border:1px solid #ddd;
 	width:300px;
 	height: 300px;
 	border-radius: 50%;
 	padding: 7px;
-	position: absolute;
 }
 
 .avatar-img img{
