@@ -287,7 +287,7 @@ img:hover{
   -webkit-transition: all 0.5s;
   -o-transition: all 0.5s;
   transition: all 0.5s;
-  
+  font-family: arial;
 }
 
 .dropdown-menu > li > a {
@@ -349,6 +349,7 @@ img:hover{
   display: inline-block;
   font-size: 20px;
   padding: 10px;
+  font-family: arial;
 }
 .content_top_right{
   float: left;
@@ -633,6 +634,7 @@ img:hover{
 .catg_titile a{
   color: #383838;
   font-size: 24px;
+  font-family: arial;
 }
 .comments_box{
   float: left;
@@ -695,7 +697,7 @@ float: left;
   height: 80%;
 }
 .media-heading a{
-  font-family: "Oswald",sans-serif;
+  font-family: arial;
 }
 .games_fashion_area{
   float: left;
