@@ -1,0 +1,122 @@
+			<div ng-controller="homeCtrl as home">
+				 <!-- Content top -->
+                <div class="content_top">
+                    <div class="row">
+                       <!-- start content top latest slider -->
+                      <div class="col-lg-6 col-md-6 col-sm-6 top1_new">             
+                        <div class="latest_slider">
+                           <!-- Set up your HTML -->
+                          <div class="slick_slider">
+                            <div class="single_iteam">
+                             <!--  <img src="{{top1new.UrlImage}}" alt="img"> -->
+                              <a  ui-sref="detail({id : top1new.IDNews})" class="design_img top1_new_img"  ng-style="{'background-image': 'url(' + top1new.UrlImage + ')'}"></a>
+                              <h2><a class="slider_tittle" ui-sref="detail({id : top1new.IDNews})">{{top1new.Title}}</a></h2>
+                            </div>
+                            <!-- <div class="single_iteam">
+                              <img src="assets/img/news/550x330x2.jpg" alt="img">
+                              <h2><a class="slider_tittle" href="single.html">Fusce eu nulla semper porttitor felis sit amet</a></h2>
+                            </div>
+                            <div class="single_iteam">
+                              <img src="assets/img/news/550x330x3.jpg" alt="img">
+                               <h2><a class="slider_tittle" href="single.html">Fusce eu nulla semper porttitor felis sit amet</a></h2>
+                            </div>
+                            <div class="single_iteam">
+                              <img src="assets/img/news/550x330x4.jpg" alt="img">
+                               <h2><a class="slider_tittle" href="single.html">Fusce eu nulla semper porttitor felis sit amet</a></h2>
+                            </div> -->
+                          </div>
+                        </div>
+                      </div> <!-- End content top latest slider -->
+
+                      <div class="col-lg-6 col-md-6 col-sm6">
+                        <div class="content_top_right">
+                          <ul class="featured_nav wow fadeInDown">
+                            <li ng-repeat="topnew in topnews">
+                              <a  ui-sref="detail({id : topnew.IDNews})" class="design_img top4_new_img"  ng-style="{'background-image': 'url(' + topnew.UrlImage + ')'}"></a>
+                              <div class="title_caption">
+                                <a ui-sref="detail({id : topnew.IDNews})">
+                                  {{topnew.Title}}
+                                </a>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                  <!-- END -->
+               
+                  <!-- Content bottom -->
+                <div class="content_bottom">
+                    <!--Content bottom trái-->
+                    <div>
+                        <!-- Danh mục tin + tin nổi bật -->
+                        <div class="content_bottom_left">
+                          <!-- Tin nổi bật của mỗi danh mục tin -->
+                          <div class="games_fashion_area">
+                            <!--Item-->
+                            <div class="col-md-4 col-sm-4 item_categories" ng-repeat="news_by_category in news_by_categories">
+                              <div class="single_category">
+                                <!--Tên Danh mục tin-->
+                                <h2>                  
+                                  <span class="bold_line"><span></span></span>
+                                  <span class="solid_line"></span>
+                                  <a class="title_text" href="category-archive.html">{{news_by_category.NameCategory}}</a>
+                                </h2>
+                                <!--Tin tức mới nhất trong categories-->
+                                <ul class="fashion_catgnav wow fadeInDown">
+                                  <!--Nội dung theo danh mục tin-->
+                                  <li>
+                                    <div class="catgimg2_container">
+                                      <!-- <a ui-sref="detail"><img alt="img" src="{{news_by_category.news[0].UrlImage}}"></a> -->
+                                      <a  ui-sref="detail({id : news_by_category.news[0].IDNews})" class="design_img design_img_2 news_by_categories"  ng-style="{'background-image': 'url(' + news_by_category.news[0].UrlImage + ')'}"></a>
+                                   </div>
+                                    <h2 class="catg_titile"><a style="font-size:20px; font-weight:bold;" ui-sref="detail({id : news_by_category.news[0].IDNews})">{{news_by_category.news[0].Title}}</a></h2>
+                                    <div class="comments_box">
+                                      <span class="meta_date">14/12/2013</span>
+                                      
+                                      <span class="meta_more"><a ui-sref="detail">Read More...</a></span>
+                                    </div>
+                                    <p>{{news_by_category.news[0].Summary | limitTo : 100}}...</p>
+                                  </li>
+                                </ul>
+                                <ul class="small_catg wow fadeInDown">
+                                  <li ng-repeat="other_news_by_cat in news_by_category.news" >
+                                    <div class="media wow fadeInDown">
+                                      <a class="media-left" ui-sref="detail">
+                                        <img src="assets/img/news/112x112.jpg" alt="img">
+                                      </a>
+                                      <div class="media-body">
+                                        <h4 class="media-heading"><a style="font-size: 15px; font-weight:bold;" ui-sref="detail({id : other_news_by_cat.IDNews})">{{other_news_by_cat.Title}}</a></h4> 
+                                        <div class="comments_box">
+                                          <span class="meta_date">14/12/2013</span>
+                                          <span class="meta_comment"><a href="#">No Comments</a></span>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </li>                  
+                                </ul>
+                              </div>
+                            </div>
+                            <!-- End games category -->
+                          </div><!-- End games & fashion category -->   
+                        </div>
+                    </div>
+                    <!-- Content bottom phải-->
+                    <!-- <div class="col-lg-4 col-md-4">
+                      <div class="content_bottom_right">
+                        <div class="images" style="margin-bottom:10px;">
+                          <img width="330px" height="235px" alt="" src="/assets/img/ad/ad_1.png"/>
+                        </div>
+                        <div class="images" style="margin-bottom:10px;">
+                            <img width="330px" height="235px" alt="" src="/assets/img/ad/ad_4.jpg"/>
+                        </div>
+                        <div class="images">
+                            <img width="330px" height="235px" alt="" src="/assets/img/ad/ad_5.jpg"/>
+                        </div>
+
+                      </div>            
+                    </div>
+                </div> -->
+                <!-- END -->   
+			</div>
