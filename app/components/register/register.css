@@ -1,7 +1,40 @@
-.register_form {
-          padding: 0px 400px;
-          
+.register_form {      
+    background: url(/assets/img/news/register.jpg);
+    padding: 34px 60px 34px 60px;
 }
-.form-group {
-     padding-top: 0px;
+h2{
+        padding-top: 7px;
+}
+.input-group {padding: 13px 35px;}
+.register_form .form{
+   background-color: #fff;
+   padding: 0px 50px;
+   /* margin: 30px 0px 30px 0px; */
+}
+
+
+.register_form .form-actions {
+    padding: 30px 80px;
+}
+.register_form .form-actions a{
+    
+float: right;
+    
+padding-left: 70px;
+    
+padding-right: 70px;
+    
+font-weight: 600;
+    
+font-size: 16px;
+}
+.register_form .form-actions button{
+    
+padding-left: 70px;
+    
+padding-right: 70px;
+    
+font-weight: 600;
+    
+font-size: 16px;
 }
