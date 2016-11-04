@@ -1,1 +1,41 @@
-aaaaaaaaa
+<div class="login_form" ng-controller="loginCtrl">
+  <form name="form" ng-submit="vm.login()" role="form">
+    <div class="row  wow fadeInLeft">
+        <div class="col-lg-2 col-md-2"></div>
+        <div class="col-lg-8 col-md-8 form">
+            <h2><i class="fa fa-unlock-alt" aria-hidden ="true" ></i>Login</h2>
+            <hr>
+          
+             
+
+                
+                <div class="input-group" ng-class="{ 'has-error': form.E-mail.$dirty && form.E-mail.$error.required }">
+                    <span class="input-group-addon">
+                      <i class="fa fa-envelope"></i>
+                        </span>
+                    <input type="text" class="form-control email" name="E-mail" id="E-mail" ng-model="vm.user.E-mail" required placeholder="Enter Your E-mail" />
+                    <span ng-show="form.E-mail.$dirty && form.E-mail.$error.required" class="help-block"></span>
+                </div>
+
+                <div class="input-group" ng-class="{ 'has-error': form.password.$dirty && form.password.$error.required }">
+                    <span class="input-group-addon">
+                        <i class="fa fa-shield"></i>
+                    </span>
+                    <input type="password" name="password" id="password" class="form-control" ng-model="vm.user.password" required placeholder="Enter Your Password" />
+                    <span ng-show="form.password.$dirty && form.password.$error.required" class="help-block"></span>
+                </div>
+               
+
+
+
+                <div class="form-actions">
+                    <button type="submit" ng-disabled="form.$invalid || vm.dataLoading" class="btn btn-success">Login</button>
+                    <a href="#/login" class="btn btn-success">Cancel</a>
+                </div>
+            
+        </div>
+        <div class="col-lg-2 col-md-2"></div>
+    </div>
+</form>
+
+</div>

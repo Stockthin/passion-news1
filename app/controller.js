@@ -206,4 +206,4 @@ app.controller('detailCtrl', detailCtrl);
 app.controller('headerCtrl', headerCtrl);
 app.controller('footerCtrl', footerCtrl);
 app.controller('mainMenuCtrl', mainMenuCtrl);
-app.controller('aboutUsCtrl', registerCtrl);
+app.controller('registerCtrl', registerCtrl);
