@@ -101,25 +101,14 @@ function config($stateProvider, $urlRouterProvider) {
             }
         })
 
-    //Login
-    // .state('login', {
-    //     url: '/login',
-    //     templateUrl: 'view/login.html',
-    //     controller: 'LoginCtrl as login',
-    //     data: { pageTitle: 'LOGIN' }
-    // })
-    // .state('register', {
-    //     url: '/register',
-    //     templateUrl: 'view/register.html',
-    //     controller: 'RegisterCtrl as register',
-    //     data: { pageTitle: 'REGISTER' }
-    // })
-    // .state('userProfile', {
-    //     url: '/user-profile',
-    //     templateUrl: 'view/user-profile.html',
-    //     controller: 'UserProCtrl as userProfile',
-    //     data: { pageTitle: 'USER-PROFILE' }
-    // })
+        //Login
+        .state('login', {
+            url: '/login',
+            templateUrl: 'app/components/login/login.html',
+            controller: 'LoginCtrl as login',
+            data: { pageTitle: 'LOGIN' }
+        })
+    
     // .state('forgot-pass', {
     //     url: "/forgot-pass",
     //     templateUrl: "view/forgot-pass.html",
