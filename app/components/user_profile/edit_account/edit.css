@@ -1,25 +1,30 @@
 .edit_your_profile{
 	font-size: 35px;
-	    padding-left: 186px;
+	 padding-left: 230px;
+	 margin-bottom: -3px;
 }
 .edit_profile{
 	border:1px solid #ddd;
 	border-radius: 10px;
 	padding:10px;
-	height: 300px;
-	width:50%;
+	height: 350px;
+	width:60%;
 	margin-top: 20px;
 	background-color: #fff;
 }
 .edit_profile .edit{
-	margin:20px 20px 30px 5px;
+	margin:-3px 20px -5px 5px;
 }
 .submit{
-	margin-right: 223px;
+	margin-top: 30px;
+	margin-right: 290px;
     padding: 8px 43px;
+    font-size: 15px;
+    background-color: #3fb352;
+    border:#3fb352;
 }
 label{
-	padding-top: 30px;
+	padding-top: 18px;
 }
 .icon_cog{
 	padding-top: 30px;

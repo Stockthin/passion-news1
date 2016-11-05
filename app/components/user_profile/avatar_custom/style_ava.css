@@ -11,7 +11,9 @@
 	border-radius: 50%;
 }
 
-.chucnang h3{
+.chucnang .Tieu_de_chuc_nang{
 	display: inline-block;
 	padding-left: 100px;
+	margin-bottom: -7px;
+	font-size: 27px;
 }
