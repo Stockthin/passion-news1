@@ -196,6 +196,18 @@ function aboutUsCtrl() {
 function viewProCtrl() {
 
 }
+//Register 
+function registerCtrl() {
+
+}
+//Login
+function loginCtrl() {
+
+}
+//Forgot Password
+function forgotPassCtrl() {
+
+}
 app.controller('mainCtrl', mainCtrl);
 app.controller('viewProCtrl', viewProCtrl);
 app.controller('userProCtrl', userProCtrl);
@@ -207,3 +219,5 @@ app.controller('headerCtrl', headerCtrl);
 app.controller('footerCtrl', footerCtrl);
 app.controller('mainMenuCtrl', mainMenuCtrl);
 app.controller('registerCtrl', registerCtrl);
+app.controller('loginCtrl', loginCtrl);
+app.controller('forgotPassCtrl', forgotPassCtrl);

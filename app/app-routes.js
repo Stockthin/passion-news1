@@ -105,19 +105,19 @@ function config($stateProvider, $urlRouterProvider) {
     .state('login', {
         url: '/login',
         templateUrl: 'app/components/login/login.html',
-        controller: 'LoginCtrl as login',
+        controller: 'loginCtrl as login',
         data: {
             pageTitle: 'LOGIN'
         }
     })
 
-    //  .state('forgot_password', {
-    //    url: "/forgot_password",
-    //  templateUrl: "app/components/forgot_password/forgot_password.html",
-    //controller: 'forgot_passwordCtrl as forgot',
-    //data: {
-    //   pageTitle: 'FORGOT'
-    //    }
-    //    });
+     .state('forgot_pass', {
+       url: "/forgot_password",
+     templateUrl: "app/components/forgot_password/forgot_password.html",
+    controller: 'forgotPassCtrl as forgot',
+    data: {
+      pageTitle: 'FORGOT'
+       }
+       });
 }
 app.config(config);

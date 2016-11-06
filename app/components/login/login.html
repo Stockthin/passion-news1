@@ -1,5 +1,5 @@
 <div class="login_form" ng-controller="loginCtrl">
-    <form name="form" ng-submit="vm.login()" role="form">
+    <form name="form" role="form">
         <div class="row  wow fadeInLeft">
             <div class="col-lg-2 col-md-2"></div>
             <div class="col-lg-8 col-md-8 form">
@@ -13,7 +13,7 @@
                     <span class="input-group-addon">
                       <i class="fa fa-envelope"></i>
                         </span>
-                    <input type="text" class="form-control email" name="E-mail" id="E-mail" ng-model="vm.user.E-mail" required placeholder="Enter Your E-mail" />
+                    <input type="text" class="form-control email" name="E-mail" id="E-mail"  required placeholder="Enter Your E-mail" />
                     <span ng-show="form.E-mail.$dirty && form.E-mail.$error.required" class="help-block"></span>
                 </div>
 
@@ -21,7 +21,7 @@
                     <span class="input-group-addon">
                         <i class="fa fa-shield"></i>
                     </span>
-                    <input type="password" name="password" id="password" class="form-control" ng-model="vm.user.password" required placeholder="Enter Your Password" />
+                    <input type="password" name="password" id="password" class="form-control" required placeholder="Enter Your Password" />
                     <span ng-show="form.password.$dirty && form.password.$error.required" class="help-block"></span>
                 </div>
                 <div class="row">
