@@ -1,19 +1,27 @@
-
-.avatar-img{
-	border:1px solid #ddd;
-	width:300px;
-	height: 300px;
-	border-radius: 50%;
-	padding: 7px;
+.avatar-img {
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    padding: 20px;
 }
 
-.avatar-img img{
-	border-radius: 50%;
+.edit-avatar {
+    text-align: center;
+    padding: 23px 0px;
 }
 
-.chucnang .Tieu_de_chuc_nang{
-	display: inline-block;
-	padding-left: 100px;
-	margin-bottom: -7px;
-	font-size: 27px;
+.edit-avatar a {}
+
+.edit-avatar .btn {}
+
+.avatar-img img {
+    border-radius: 50%;
+}
+
+.feature {
+    text-align: center;
+}
+
+.feature .feature-top {
+    display: inline-block;
+    font-size: 27px;
 }

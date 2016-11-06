@@ -43,16 +43,16 @@ h2 {
 
 .login_form .remember checkbox {}
 
-.login_form .forget-pass {
+.login_form .forgot-pass {
     text-align: center;
     padding: 10px;
 }
 
-.login_form .forget-pass a {
+.login_form .forgot-pass a {
     /* text-align: left; */
 }
 
-.login_form .forget-pass a:hover {
+.login_form .forgot-pass a:hover {
     text-decoration: underline;
 }
 
