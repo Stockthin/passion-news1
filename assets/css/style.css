@@ -43,7 +43,7 @@ a:focus {
 }
 
 h2 {
-    font-family: 'Oswald', sans-serif;
+    font-family: arial;
     line-height: 23px;
 }
 
@@ -596,7 +596,7 @@ img:hover {
 
 .catg1_nav li .post_titile a {
     color: #383838;
-    font-family: 'Oswald', sans-serif;
+    font-family: arial;
     -webkit-transition: all 0.5s;
     -o-transition: all 0.5s;
     transition: all 0.5s;
@@ -1291,12 +1291,13 @@ span.meta_more:before {
 
 /*send*/
 
-.similar_post .submit button {
+
+/*.similar_post .submit button {
     background: #39b54a;
     border-color: #4cae4c;
     float: right;
     margin-bottom: 20px;
-}
+}*/
 
 .linkedin {
     background-color: #007BB5;

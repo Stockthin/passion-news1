@@ -1,7 +1,18 @@
-.view_profiles table{
-	margin-top: 40px;
+.view_profiles table {
+    margin-top: 30px;
 }
-.view_profiles tr{
-	font-size: 20px;
-	padding-top: 30px;
+
+.view_profiles tr {
+    font-size: 20px;
+    padding-top: 30px;
+}
+
+.view_profiles {
+    background-color: #fff;
+    display: inline-block;
+    float: left;
+    margin-bottom: 20px;
+    padding: 0 15px;
+    width: 100%;
+    margin-top: 20px;
 }

@@ -25,11 +25,11 @@
                     <span ng-show="form.password.$dirty && form.password.$error.required" class="help-block"></span>
                 </div>
                 <div class="row">
-                    <div class="col-lg-6 col-md-6 remember">
+                    <div class="remember">
                         <label class="checkbox">
                             <input type="checkbox">Remember me</label>
                     </div>
-                    <div class="col-lg-6 col-md-6 forgot-pass">
+                    <div class="forgot-pass">
                         <a href=" ">Forgot your Password?</a>
                     </div>
                 </div>
@@ -39,7 +39,7 @@
                         <div class="col-lg-4 col-md-4">
                             <button type="submit" ng-disabled="form.$invalid || vm.dataLoading" class="btn btn-success">Login</button>
                         </div>
-                        <div class="col-lg- col-md-4">
+                        <div class="col-lg- col-md-4 other-login">
                             <p>or login with</p>
                         </div>
                         <div class="col-lg- col-md-4">
@@ -61,7 +61,7 @@
                     </div>
                 </div>
                 <div class="row note">
-                    <p class="account">Don't have an account? <a href=" ">Register now!</a></p>
+                    <p>Don't have an account? <a href=" ">Register now!</a></p>
 
                 </div>
 

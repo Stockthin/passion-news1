@@ -1,140 +1,150 @@
-        <!-- start main content bottom -->
-          <div class="content_bottom" ng-controller="detailCtrl as detail">
-            <!-- <div>{{tieude2}}</div> -->
-            <div class="col-lg-8 col-md-8">
-              <!-- start content bottom left -->
-              <div class="content_bottom_left">                
-                <div class="single_page_area">
-                  <ol class="breadcrumb">
+<!-- start main content bottom -->
+<div class="content_bottom" ng-controller="detailCtrl as detail">
+    <!-- <div>{{tieude2}}</div> -->
+    <div class="col-lg-8 col-md-8">
+        <!-- start content bottom left -->
+        <div class="content_bottom_left">
+            <div class="single_page_area">
+                <ol class="breadcrumb">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">{{name_category}}</a></li>
                     <li class="active">{{new.Title | limitTo:50}}...</li>
-                  </ol>
-                  <h2 class="post_titile">{{new.Title}}</h2>
-                  <div class="single_page_content">
+                </ol>
+                <h2 class="post_titile">{{new.Title}}</h2>
+                <div class="single_page_content">
                     <div class="post_commentbox">
-                      <a href="#"><i class="fa fa-user"></i>Wpfreeware</a>
-                      <span><i class="fa fa-calendar"></i>6:49 AM</span>
-                      <a href="#"><i class="fa fa-tags"></i>{{name_category}}</a>
+                        <a href="#"><i class="fa fa-user"></i>Wpfreeware</a>
+                        <span><i class="fa fa-calendar"></i>6:49 AM</span>
+                        <a href="#"><i class="fa fa-tags"></i>{{name_category}}</a>
                     </div>
                     <img style="width: 100%;" class="img-center" src="{{new.UrlImage}}" alt="img">
                     <p><strong>{{new.Summary}}</strong></p>
-                   <!--  <blockquote>
+                    <!--  <blockquote>
                       Donec volutpat nibh sit amet libero ornare non laoreet arcu luctus. Donec id arcu quis mauris euismod placerat sit amet ut metus. Sed imperdiet fringilla sem eget euismod. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque adipiscing, neque ut pulvinar tincidunt, est sem euismod odio, eu ullamcorper turpis nisl sit amet velit. Nullam vitae nibh odio, non scelerisque nibh. Vestibulum ut est augue, in varius purus.
                     </blockquote> -->
                     <p>{{new.Content}}</p>
                     <h3>Related News</h3>
                     <ul>
-                      <li ng-repeat="other_new in other_news"><a ui-sref="detail({id : other_new.IDNews})">{{other_new.Title}}</a></li>
-                    
+                        <li ng-repeat="other_new in other_news"><a ui-sref="detail({id : other_new.IDNews})">{{other_new.Title}}</a></li>
+
                     </ul>
                     <h3>Tags</h3>
                     <button class="btn btn-defaut">Tag1</button>
                     <button class="btn btn-defaut">Tag2</button>
                     <button class="btn btn-defaut">Tag3</button>
                     <button class="btn btn-defaut">Tag4</button>
-                  </div>                 
-                </div>                  
-              </div><!--End content_bottom_left--> 
-        
-              <!-- start cmt post-->
-              <div class="similar_post">
-               
+                </div>
+            </div>
+        </div>
+        <!--End content_bottom_left-->
 
-                <form>
-                  <!--ava-->
-                   <div class="col-xs-1 col-sm-1">
-                   <div class="avartar">
-                      <a href = " " title = "avatar">
-                        <img src="assets/img/news/ava.jpg" style = "width: 70px; height: 74px;"/>
-                      </a>
+        <!-- start cmt post-->
+        <div class="similar_post">
+
+
+            <form>
+                <!--ava-->
+                <div class="col-xs-1 col-sm-1">
+                    <div class="avartar">
+                        <a href=" " title="avatar">
+                            <img src="assets/img/news/ava.jpg" style="width: 70px; height: 74px;" />
+                        </a>
                     </div>
                 </div>
                 <div class="col-xs-11 col-sm-11">
-                  <!--button-->
+                    <!--button-->
                     <div class="cmt">
-                      <div class = "button">
-                        <ul>
-                          <li><input type = "button" title = "In đậm" value = "B" style = "font-weight:bold"/></li>
-                          <li><input type = "button" title = "In nghiêng" value = "I" style = "font-style:italic"/></li>
-                          <li><input type = "button" title = "Gạch chân" value = "U" style = "text-decoration:underline"/></li>
-                         
-                        </ul>
-                      </div>
-                   
-                    <!--textbox-->
-                    <div class="textbox">
-                    <textarea placeholder="Bạn muốn nói gì?"  title="Bạn muốn nói gì?" ></textarea>
-                    <div class="fb-comments" data-href="http://localhost:3000/#/detail/{{ news.IDNews }}" data-numposts="5" width="600px"></div>
-                    <!-- nút like facebook -->
-                    <script>(function(d, s, id) {
-                        var js, fjs = d.getElementsByTagName(s)[0];
-                        if (d.getElementById(id)) return;
-                        js = d.createElement(s); js.id = id;
-                        js.src = "//connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.8";
-                        fjs.parentNode.insertBefore(js, fjs);
-                        }(document, 'script', 'facebook-jssdk'));
-                    </script>
-                  <!-- end like facebook -->
-                  <!-- start commetnt faceook -->
-                  <div id="fb-root"></div>
-                      <script>(function(d, s, id) {
-                        var js, fjs = d.getElementsByTagName(s)[0];
-                        if (d.getElementById(id)) return;
-                        js = d.createElement(s); js.id = id;
-                        js.src = "//connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.8";
-                        fjs.parentNode.insertBefore(js, fjs);
-                      }(document, 'script', 'facebook-jssdk'));
-                      </script>
-       
-                    <!-- end comment facebook -->
-                    </div>
-                    
+                        <div class="button">
+                            <ul>
+                                <li>
+                                    <input type="button" title="In đậm" value="B" style="font-weight:bold" />
+                                </li>
+                                <li>
+                                    <input type="button" title="In nghiêng" value="I" style="font-style:italic" />
+                                </li>
+                                <li>
+                                    <input type="button" title="Gạch chân" value="U" style="text-decoration:underline" />
+                                </li>
 
-                    <!-- send -->
-                    <div class = "submit">
+                            </ul>
+                        </div>
+
+                        <!--textbox-->
+                        <div class="textbox">
+                            <textarea placeholder="Bạn muốn nói gì?" title="Bạn muốn nói gì?"></textarea>
+                            <div class="fb-comments" data-href="http://localhost:3000/#/detail/{{ news.IDNews }}" data-numposts="5" width="600px"></div>
+                            <!-- nút like facebook -->
+                            <script>
+                                (function (d, s, id) {
+                                    var js, fjs = d.getElementsByTagName(s)[0];
+                                    if (d.getElementById(id)) return;
+                                    js = d.createElement(s);
+                                    js.id = id;
+                                    js.src = "//connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.8";
+                                    fjs.parentNode.insertBefore(js, fjs);
+                                }(document, 'script', 'facebook-jssdk'));
+                            </script>
+                            <!-- end like facebook -->
+                            <!-- start commetnt faceook -->
+                            <div id="fb-root"></div>
+                            <script>
+                                (function (d, s, id) {
+                                    var js, fjs = d.getElementsByTagName(s)[0];
+                                    if (d.getElementById(id)) return;
+                                    js = d.createElement(s);
+                                    js.id = id;
+                                    js.src = "//connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.8";
+                                    fjs.parentNode.insertBefore(js, fjs);
+                                }(document, 'script', 'facebook-jssdk'));
+                            </script>
+
+                            <!-- end comment facebook -->
+                        </div>
+
+
+                        <!-- send -->
+                        <!--<div class = "submit">
                       <button type="button" class="btn btn-success">Comment</button> 
+                    </div>-->
                     </div>
-                  </div>
-                  
+
                 </div>
-                   
-                    
-                  
-                </form>
-              </div>
-              <!-- End cmt post-->
-              
-            </div>
-            <!-- Hot News -->
-            <div class="col-lg-4 col-md-4">
-              <div class="content_bottom_right">
-                <!-- start single bottom rightbar -->
-                <div class="single_bottom_rightbar">
-                  <h2>Hot News</h2>
-                  <ul class="small_catg popular_catg wow fadeInDown">
+
+
+
+            </form>
+        </div>
+        <!-- End cmt post-->
+
+    </div>
+    <!-- Hot News -->
+    <div class="col-lg-4 col-md-4">
+        <div class="content_bottom_right">
+            <!-- start single bottom rightbar -->
+            <div class="single_bottom_rightbar">
+                <h2>Hot News</h2>
+                <ul class="small_catg popular_catg wow fadeInDown">
                     <li class="col-sm-3" ng-repeat="hotnew in hotnews">
-                      <div class="media wow fadeInDown">
-                        <!--Ảnh-->
-                        <div class="col-md-4 item1_hot_news">
-                          <div class="item1_1_hot_news">
-                            <a ui-sref="detail({id : hotnew.IDNews})" class="design_img hot_news_img" ng-style="{'background-image': 'url(' + hotnew.UrlImage + ')'}"></a>
-                          </div>
+                        <div class="media wow fadeInDown">
+                            <!--Ảnh-->
+                            <div class="col-md-4 item1_hot_news">
+                                <div class="item1_1_hot_news">
+                                    <a ui-sref="detail({id : hotnew.IDNews})" class="design_img hot_news_img" ng-style="{'background-image': 'url(' + hotnew.UrlImage + ')'}"></a>
+                                </div>
+                            </div>
+                            <!--Tiêu đề + Mô tả-->
+                            <div class="col-md-8 item2_hot_news">
+                                <div class="item2_1_hot_news">
+                                    <h4 class="media-heading"><a ui-sref="detail({id : hotnew.IDNews})">{{hotnew.Title | limitTo : 50}}...</a></h4>
+                                    <p>{{hotnew.Summary | limitTo : 50}}...</p>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
                         </div>
-                        <!--Tiêu đề + Mô tả-->
-                        <div class="col-md-8 item2_hot_news">
-                          <div class="item2_1_hot_news">
-                            <h4 class="media-heading"><a ui-sref="detail({id : hotnew.IDNews})">{{hotnew.Title | limitTo : 50}}...</a></h4> 
-                            <p>{{hotnew.Summary | limitTo : 50}}...</p>
-                          </div>
-                        </div>
-                        <div class="clearfix"></div>
-                      </div>
                     </li>
-                  </ul>
-                </div> 
-                <!-- End single bottom rightbar -->
-              </div>
+                </ul>
             </div>
-          </div>
-        
+            <!-- End single bottom rightbar -->
+        </div>
+    </div>
+</div>
