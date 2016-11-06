@@ -1,40 +1,104 @@
-.login_form {      
+.login_form {
     background: url(/assets/img/news/register.jpg);
     padding: 34px 60px 34px 60px;
 }
-h2{
-        padding-top: 7px;
-}
-.input-group {padding: 13px 62px;}
-.login_form .form{
-   background-color: #fff;
-   padding: 0px 50px;
-   /* margin: 30px 0px 30px 0px; */
+
+h2 {
+    padding-top: 7px;
 }
 
+.input-group {
+    padding: 13px 62px;
+}
+
+.login_form .form {
+    background-color: #fff;
+    padding: 0px 50px;
+    /* margin: 30px 0px 30px 0px; */
+}
 
 .login_form .form-actions {
     padding: 30px 80px;
 }
-.login_form .form-actions a{
-    
-float: right;
-    
-padding-left: 70px;
-    
-padding-right: 70px;
-    
-font-weight: 600;
-    
-font-size: 16px;
+
+.login_form .form-actions a {
+    font-weight: 600;
+    color: #fff;
+    font-size: 16px;
 }
-.login_form .form-actions button{
-    
-padding-left: 70px;
-    
-padding-right: 70px;
-    
-font-weight: 600;
-    
-font-size: 16px;
+
+.login_form .form-actions a:hover {
+    color: #ccc;
+}
+
+.login_form .remember {
+    text-align: center;
+}
+
+.login_form .remember label {
+    /* text-align: center; */
+    padding: inherit;
+    font-weight: normal;
+}
+
+.login_form .remember checkbox {}
+
+.login_form .forget-pass {
+    text-align: center;
+    padding: 10px;
+}
+
+.login_form .forget-pass a {
+    /* text-align: left; */
+}
+
+.login_form .forget-pass a:hover {
+    text-decoration: underline;
+}
+
+p {
+    font-weight: 600;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.social .social-fb {
+    background-color: #3B5998;
+}
+
+.social .social-twitter {
+    background-color: #28AAE1;
+}
+
+.social .social-googleplus {
+    background-color: #CC3226;
+}
+
+.social li {
+    display: inline-block;
+}
+
+.social .social-icons li {
+    width: 30px;
+    border-radius: 50%;
+    height: 30px;
+}
+
+.social .social-icons li i {
+    padding: 9px 9px;
+}
+
+.login_form .form-actions button {
+    padding-left: 30px;
+    padding-right: 30px;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.note {
+    margin-bottom: 25px;
+}
+
+.note a:hover {
+    text-decoration: underline
 }

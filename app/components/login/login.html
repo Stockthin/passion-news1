@@ -1,14 +1,14 @@
 <div class="login_form" ng-controller="loginCtrl">
-  <form name="form" ng-submit="vm.login()" role="form">
-    <div class="row  wow fadeInLeft">
-        <div class="col-lg-2 col-md-2"></div>
-        <div class="col-lg-8 col-md-8 form">
-            <h2><i class="fa fa-unlock-alt" aria-hidden ="true" ></i>Login</h2>
-            <hr>
-          
-             
+    <form name="form" ng-submit="vm.login()" role="form">
+        <div class="row  wow fadeInLeft">
+            <div class="col-lg-2 col-md-2"></div>
+            <div class="col-lg-8 col-md-8 form">
+                <h2><i class="fa fa-unlock-alt" aria-hidden ="true" ></i>Login</h2>
+                <hr>
 
-                
+
+
+
                 <div class="input-group" ng-class="{ 'has-error': form.E-mail.$dirty && form.E-mail.$error.required }">
                     <span class="input-group-addon">
                       <i class="fa fa-envelope"></i>
@@ -24,18 +24,50 @@
                     <input type="password" name="password" id="password" class="form-control" ng-model="vm.user.password" required placeholder="Enter Your Password" />
                     <span ng-show="form.password.$dirty && form.password.$error.required" class="help-block"></span>
                 </div>
-               
-
-
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 remember">
+                        <label class="checkbox">
+                            <input type="checkbox">Remember me</label>
+                    </div>
+                    <div class="col-lg-6 col-md-6 forget-pass">
+                        <a href=" ">Forget your Password?</a>
+                    </div>
+                </div>
 
                 <div class="form-actions">
-                    <button type="submit" ng-disabled="form.$invalid || vm.dataLoading" class="btn btn-success">Login</button>
-                    <a href="#/login" class="btn btn-success">Cancel</a>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4">
+                            <button type="submit" ng-disabled="form.$invalid || vm.dataLoading" class="btn btn-success">Login</button>
+                        </div>
+                        <div class="col-lg- col-md-4">
+                            <p>or login with</p>
+                        </div>
+                        <div class="col-lg- col-md-4">
+                            <div class="social">
+                                <ul class="social-icons">
+                                    <li class="social-fb">
+                                        <a href="#" target="_blank" title="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                    </li>
+                                    <li class="social-twitter">
+                                        <a href="#" target="_blank" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                    </li>
+
+                                    <li class="social-googleplus">
+                                        <a href="#" target="_blank" title="GooglePlus"><i class="fa fa-google" aria-hidden="true"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            
+                <div class="row note">
+                    <p class="account">Don't have an account? <a href=" ">Register now!</a></p>
+
+                </div>
+
+            </div>
+            <div class="col-lg-2 col-md-2"></div>
         </div>
-        <div class="col-lg-2 col-md-2"></div>
-    </div>
-</form>
+    </form>
 
 </div>
