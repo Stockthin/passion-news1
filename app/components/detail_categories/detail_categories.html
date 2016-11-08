@@ -1,19 +1,200 @@
-<div  ng-controller="categoriesCtrl">
-	 <ul class="">
-        <!--Nội dung theo danh mục tin-->
-        <li class="col-md-6 col-sm-6 wow fadeInRight" ng-repeat="news in news_by_category">
-			
-            <div>
-                <a ui-sref="detail({id : news.IDNews})" class="design_img  detail_categories"  ng-style="{'background-image': 'url(' + news.UrlImage + ')'}"></a>
+<div class="wow fadeInRight">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="ima">
+                
             </div>
-            <h2 style="font-size: 20px;"><a ui-sref="detail({id : news.IDNews})">{{news.Title}}</a></h2>
+            <h2>
+                <a href="" class="title">
+                    Cặp sao “Yêu Không Kiểm Soát” Suzy - Kim Woo Bin tái ngộ trong đám cưới đồng nghiệp 
+                </a>
+            </h2>
             <div class="comments_box">
-                <span class="meta_date">14/12/2013</span>
-                <span class="meta_more"><a ui-sref="detail">Read More...</a></span>
+                <span class="meta_date">
+                    14/10/2016
+                </span>
+                 <span class="meta_more">
+                    <a>
+                        Read More...
+                    </a>
+                </span>
             </div>
-            <p>{{news.Summary | limitTo : 100}}...</p>
-        </li>
-      
-    </ul>
-   
+            <p class="content_news"> 
+                Suzy (Miss A) và Kim Woo Bin được bắt gặp xuất hiện trong đám cưới của nam diễn viên Jung Soo Kyo.
+            </p>
+        </div>
+
+        <div class="col-md-6">
+            <div class="ima2">
+
+                
+            </div>
+            <h2>
+                <a href="" class="title">
+                    Mũi cao và cằm thon gọn bất ngờ, Nhã Phương giờ đây đã xinh và sang chảnh hơn trước!
+                </a>
+            </h2>
+            <div class="comments_box">
+                <span class="meta_date">
+                    14/10/2016
+                </span>
+                 <span class="meta_more">
+                    <a>
+                        Read More...
+                    </a>
+                </span>
+            </div>
+            <p class="content_news"> 
+                   Can thiệp dao kéo để thay đổi diện mạo và phong cách, Nhã Phương đang muốn trở nên cá tính hơn?  
+            </p>
+        </div>
+    </div>
+			
+    <div class="row">
+        <div class="col-md-4">
+            <div class="imag1">
+                
+            </div>
+            <h2>
+                <a href="" class="title">
+                    Suzy và Kim Woo Bin tái ngộ trong đám cưới đồng nghiệp
+                </a>
+            </h2>
+            <div class="comments_box">
+                <span class="meta_date">
+                    14/10/2016
+                </span>
+                 <span class="meta_more">
+                    <a>
+                        Read More...
+                    </a>
+                </span>
+            </div>
+            <p class="content_news"> 
+                Suzy (Miss A) và Kim Woo Bin được bắt gặp xuất hiện trong đám cưới của nam diễn viên Jung Soo Kyo.
+            </p>
+        </div>
+
+        <div class="col-md-4">
+            <div class="imag2">
+                
+            </div>
+            <h2>
+                <a href="" class="title">
+                    10 thần tượng nữ mà netizen Hàn Quốc nên ngừng chỉ trích, ghét bỏ
+                </a>
+            </h2>
+            <div class="comments_box">
+                <span class="meta_date">
+                    14/10/2016
+                </span>
+                 <span class="meta_more">
+                    <a>
+                        Read More...
+                    </a>
+                </span>
+            </div>
+            <p class="content_news"> 
+                 Hani, Taeyeon, Seolhyun, IU… là những thần tượng nữ thường xuyên bị ném đá vô cớ trên mạng. 
+            </p>
+        </div>
+
+        <div class="col-md-4">
+            <div class="imag3">
+               
+            </div>
+            <h2>
+                <a href="" class="title">
+                    Chân của thần tượng nữ Kpop: Ranh giới mong manh giữa "nuột" và thẳng tuột như cây gậy 
+                </a>
+            </h2>
+            <div class="comments_box">
+                <span class="meta_date">
+                    14/10/2016
+                </span>
+                 <span class="meta_more">
+                    <a>
+                        Read More...
+                    </a>
+                </span>
+            </div>
+            <p class="content_news"> 
+                 Đều sở hữu đôi chân dài và thẳng tắp, tuy nhiên các thần tượng nữ này lại bị chia thành hai nhóm: Chân nuột nà và chân kém sắc. 
+            </p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4">
+            <div class="imag1">
+               
+            </div>
+            <h2>
+                <a href="" class="title">
+                    Cặp sao “Yêu Không Kiểm Soát” Suzy - Kim Woo Bin tái ngộ trong đám cưới đồng nghiệp 
+                </a>
+            </h2>
+            <div class="comments_box">
+                <span class="meta_date">
+                    14/10/2016
+                </span>
+                 <span class="meta_more">
+                    <a>
+                        Read More...
+                    </a>
+                </span>
+            </div>
+            <p class="content_news"> 
+                Suzy (Miss A) và Kim Woo Bin được bắt gặp xuất hiện trong đám cưới của nam diễn viên Jung Soo Kyo.
+            </p>
+        </div>
+
+        <div class="col-md-4">
+            <div class="imag2">
+                
+            </div>
+            <h2>
+                <a href="" class="title">
+                    Cặp sao “Yêu Không Kiểm Soát” Suzy - Kim Woo Bin tái ngộ trong đám cưới đồng nghiệp 
+                </a>
+            </h2>
+            <div class="comments_box">
+                <span class="meta_date">
+                    14/10/2016
+                </span>
+                 <span class="meta_more">
+                    <a>
+                        Read More...
+                    </a>
+                </span>
+            </div>
+            <p class="content_news"> 
+                Suzy (Miss A) và Kim Woo Bin được bắt gặp xuất hiện trong đám cưới của nam diễn viên Jung Soo Kyo.
+            </p>
+        </div>
+
+        <div class="col-md-4">
+            <div class="imag3">
+                
+            </div>
+            <h2>
+                <a href="" class="title">
+                    Cặp sao “Yêu Không Kiểm Soát” Suzy - Kim Woo Bin tái ngộ trong đám cưới đồng nghiệp 
+                </a>
+            </h2>
+            <div class="comments_box">
+                <span class="meta_date">
+                    14/10/2016
+                </span>
+                 <span class="meta_more">
+                    <a>
+                        Read More...
+                    </a>
+                </span>
+            </div>
+            <p class="content_news"> 
+                Suzy (Miss A) và Kim Woo Bin được bắt gặp xuất hiện trong đám cưới của nam diễn viên Jung Soo Kyo.
+            </p>
+        </div>
+    </div>
 </div>

@@ -1970,3 +1970,45 @@ span.meta_more:before {
 /*<!-- =========================
         //////////////This Theme Design and Developed //////////////////////
         //////////// by www.wpfreeware.com======================-->*/
+.ima{
+  display: inline-block;
+  background-size : 100% 100%;
+  width: 100%;
+  height: 400px;
+  background-image: url('../img/news/h9.jpg');
+}
+.ima2{
+   display: inline-block;
+
+  /*background-size : 100% 100%;*/
+  width: 100%;
+  height: 400px;
+  background-image: url('../img/news/imag5.jpg');
+}
+.imag1{
+  width: 100%;
+  height: 300px;
+  background-image: url('../img/news/imag5.jpg');
+}
+.imag2{
+  width: 100%;
+  height: 300px;
+  background-image: url('../img/news/imag2.jpg');
+}
+.imag3{
+  width: 100%;
+  height: 300px;
+  background-image: url('../img/news/imag4.jpg');
+}
+.title{
+  font-family: Arial;
+  font-size: 25px;
+  color:#1042a5;
+}
+.title:hover{
+  color:#a51043;
+}
+.content_news{
+  font-size: 17px;
+
+}
