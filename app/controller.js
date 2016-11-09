@@ -106,7 +106,7 @@ function detailCtrl($scope, $http, $stateParams) {
                 if (key < 5) {
                     hotnews.push(hotnew);
                     $scope.hotnews = hotnews;
-                    // console.log(hotnews);
+                    console.log(hotnews);
                 }
                 //Lấy tên danh mục tin của tin được chọn
                 $http
@@ -183,14 +183,8 @@ function mainMenuCtrl($scope, $http) {
 }
 
 //User profile
-function userProCtrl($scope, $cookieStore) {
-    if($cookieStore.get('session_token')) {
-        $scope.first_name = $cookieStore.get('session_user').first_name;
-        $scope.last_name = $cookieStore.get('session_user').last_name;
-        $scope.email = $cookieStore.get('session_user').email;
-        // console.log($cookieStore.get('session_token'));
-         // $cookieStore.remove($cookieStore.get('session_token'));
-    }
+function userProCtrl() {
+
 }
 
 //About us
@@ -207,88 +201,13 @@ function registerCtrl() {
 
 }
 //Login
-function loginCtrl($scope, $http, $cookieStore, $window, $location){
-    $scope.area_message = false;
-    $scope.message1 = '';
-    $scope.message2 = '';
-    $scope.message3 = '';
-    $scope.login = function(){
-        if($scope.email != null && $scope.password != null) {
-             var session = {
-                'email': $scope.email,
-                'pass': $scope.password
-            };
-            console.log(session);
-            //  // console.log(session);
-            $http
-                .post (
-                    'http://demo3004504.mockable.io/example',
-                    session
-                )
-                .then (function (respone) {
-                    // console.log(respone);
-                    var data = respone.data;
-                    var message = '';
-                    console.log(respone);
-                    if(respone.data.user) {
-                        $scope.profile = respone.data.user;
-                        $cookieStore.put('session_user', $scope.profile);
-                        $cookieStore.put('session_token', $scope.profile.access_token);
-                        console.log( $cookieStore.get('session_user'));
-                        console.log( $cookieStore.get('session_token'));
-                        // console.log(access_token);
-                        $location.path('/home');
-                        $window.location.reload();
-                    }
-                    if (respone.data.error1) {
-                        var error1 = respone.data.error1;
-                        $scope.area_message = true;
-                        $scope.message1 = error1.message;
-                        // message = error1.message;
-                        console.log(error1.message);
-                    }
-                    if(respone.data.error2) {
-                        var error2 = respone.data.error2;
-                        $scope.area_message = true;
-                        $scope.message2 = error2.message;
-                        // message = error2.message;
-                        console.log(error2.message);
-                    }
-                    
-                    // console.log(respone.data);
-                    
-                });
-         } //else {
-        //     $scope.message3 = "Email hoặc mật khẩu không đúng";
-        // }
-       
-  
-    }
+function loginCtrl() {
+
 }
 //Forgot Password
 function forgotPassCtrl() {
 
 }
-//Top Header 
-function topHeaderCtrl($scope, $cookieStore) {
-    $scope.show1 = true;
-    $scope.show2 = false;
-    if($cookieStore.get('session_token')) {
-        $scope.show1 = false;
-        $scope.show2 = true;
-        $scope.name = $cookieStore.get('session_user').first_name;
-        console.log($cookieStore.get('session_token'));
-         // $cookieStore.remove($cookieStore.get('session_token'));
-    }
-}
-//Avatar Custom
-function avatarCustomCtrl($scope){
-    $scope.show_manager = false;
-    $scope.clickManager = function(){
-        $scope.show_manager = true;
-    }
-}
-app.controller('avatarCustomCtrl', avatarCustomCtrl);
 app.controller('mainCtrl', mainCtrl);
 app.controller('viewProCtrl', viewProCtrl);
 app.controller('userProCtrl', userProCtrl);
@@ -297,7 +216,6 @@ app.controller('homeCtrl', homeCtrl);
 app.controller('categoriesCtrl', categoriesCtrl);
 app.controller('detailCtrl', detailCtrl);
 app.controller('headerCtrl', headerCtrl);
-app.controller('topHeaderCtrl', topHeaderCtrl);
 app.controller('footerCtrl', footerCtrl);
 app.controller('mainMenuCtrl', mainMenuCtrl);
 app.controller('registerCtrl', registerCtrl);

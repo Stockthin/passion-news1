@@ -5,16 +5,15 @@
             <div class="col-lg-8 col-md-8 form">
                 <h2><i class="fa fa-unlock-alt" aria-hidden ="true" ></i>Login</h2>
                 <hr>
-                <div ng-show="area_message" class="alert alert-danger">
-                    <strong>{{message1}}</strong><br/> 
-                    <strong>{{message2}}</strong>
-                    <strong>{{message3}}</strong>
-                </div>
+
+
+
+
                 <div class="input-group" ng-class="{ 'has-error': form.E-mail.$dirty && form.E-mail.$error.required }">
                     <span class="input-group-addon">
                       <i class="fa fa-envelope"></i>
                         </span>
-                    <input type="email" class="form-control email" name="E-mail" id="E-mail"  required placeholder="Enter Your E-mail" ng-model="email"/>
+                    <input type="text" class="form-control email" name="E-mail" id="E-mail"  required placeholder="Enter Your E-mail" />
                     <span ng-show="form.E-mail.$dirty && form.E-mail.$error.required" class="help-block"></span>
                 </div>
 
@@ -22,7 +21,7 @@
                     <span class="input-group-addon">
                         <i class="fa fa-shield"></i>
                     </span>
-                    <input type="password" name="password" id="password" class="form-control" required placeholder="Enter Your Password" ng-model="password"/>
+                    <input type="password" name="password" id="password" class="form-control" required placeholder="Enter Your Password" />
                     <span ng-show="form.password.$dirty && form.password.$error.required" class="help-block"></span>
                 </div>
                 <div class="row">
@@ -38,7 +37,7 @@
                 <div class="form-actions">
                     <div class="row">
                         <div class="col-lg-4 col-md-4">
-                            <button type="submit" ng-click="login()" class="btn btn-success">Login</button>
+                            <button type="submit" ng-disabled="form.$invalid || vm.dataLoading" class="btn btn-success">Login</button>
                         </div>
                         <div class="col-lg- col-md-4 other-login">
                             <p>or login with</p>
