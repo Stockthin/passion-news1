@@ -1,7 +1,8 @@
 'use strict';
 // declare modules
 var app = angular.module('myApp', [
-    'ui.router'
+    'ui.router',
+    'ngCookies'
 ]);
 angular.module('Json',[]);
 //Get Parameter by Name

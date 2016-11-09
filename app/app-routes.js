@@ -18,21 +18,7 @@ function config($stateProvider, $urlRouterProvider) {
                 pageTitle: 'DETAIL'
             }
         })
-        // .state('header', {
-        //     url: '/header',
-        //     controller: 'headerCtrl',
-        //     views: {
-        //         '' : {
-        //              templateUrl: 'app/components/common/header/header.html'
-        //         },
-        //         'top_menu@header' :{
-        //             templateUrl: 'app/components/common/header/top_menu/top_menu.html'
-        //         },
-        //          'main_menu@header' :{
-        //             templateUrl: 'app/components/common/header/main_menu/main_menu.html'
-        //         } 
-        //     }
-        // })
+       
         //User profile
         .state('user_profile', {
             url: '/user_profile',
@@ -76,6 +62,44 @@ function config($stateProvider, $urlRouterProvider) {
             // controller: 'abouUsCtrl as aboutUs',
 
         })
+        //Manager
+        .state('user_profile.addCat', {
+            url: '/add_cat',
+            templateUrl: 'app/components/user_profile/manager_cat/add_cat/add_cat.html',
+            // controller: 'abouUsCtrl as aboutUs',
+
+        })
+        .state('user_profile.editCat', {
+            url: '/edit_cat',
+            templateUrl: 'app/components/user_profile/manager_cat/edit_cat/edit_cat.html',
+            // controller: 'abouUsCtrl as aboutUs',
+
+        })
+        .state('user_profile.deleteCat', {
+            url: '/delete_cat',
+            templateUrl: 'app/components/user_profile/manager_cat/delete_cat/delete_cat.html',
+            // controller: 'abouUsCtrl as aboutUs',
+
+        })
+        .state('user_profile.addNews', {
+            url: '/add_news',
+            templateUrl: 'app/components/user_profile/manager_news/add_news/add_news.html',
+            // controller: 'abouUsCtrl as aboutUs',
+
+        })
+        .state('user_profile.editNews', {
+            url: '/edit_news',
+            templateUrl: 'app/components/user_profile/manager_news/edit_news/edit_news.html',
+            // controller: 'abouUsCtrl as aboutUs',
+
+        })
+        .state('user_profile.deleteNews', {
+            url: '/delete_news',
+            templateUrl: 'app/components/user_profile/manager_news/delete_news/delete_news.html',
+            // controller: 'abouUsCtrl as aboutUs',
+
+        })
+        
         .state('about_us', {
             url: '/about_us',
             templateUrl: 'app/components/about_us/about_us.html',

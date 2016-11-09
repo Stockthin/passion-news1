@@ -1,5 +1,5 @@
 <!-- Top menu -->
-<header id="header">
+<header id="header" ng-controller="topHeaderCtrl">
     <div class="row">
         <div class="col-lg-12 col-md-12">
             <!-- start header top -->
@@ -7,9 +7,11 @@
                 <div class="header_top_left">
                     <ul class="top_nav">
                         <li><a ui-sref="about_us">About Us</a></li>
-                        <li><a ui-sref="login">Login</a></li>
-                        <li><a ui-sref="register">Register</a></li>
-                        <li><a ui-sref="user_profile.view">User Profile</a></li>
+                        <li ng-show="show1"><a ui-sref="login">Login</a></li>
+                        <li ng-show="show1"><a ui-sref="register">Register</a></li>
+                        <li ng-show="show2"><i class="fa fa-user"></i><a ui-sref="user_profile.view">{{name}}</a></li>
+                        <li ng-show="show2"><a href="#">Logout</a></li>
+                        
                     </ul>
                 </div>
                 <div class="header_top_right">
@@ -28,7 +30,7 @@
                     </a>
                 </div>
                 <div class="header_bottom_right">
-                    <a href="http://wpfreeware.com"><img src="assets/img/icon/2.gif" style="width: 725px; height: 148px;" alt="img"></a>
+                    <a href="http://wpfreeware.com"><img src="assets/img/ad/banner.jpg" style="width: 725px; height: 148px;" alt="img"></a>
                 </div>
             </div>
             <!-- End header bottom -->
