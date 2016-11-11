@@ -303,3 +303,39 @@ app.controller('mainMenuCtrl', mainMenuCtrl);
 app.controller('registerCtrl', registerCtrl);
 app.controller('loginCtrl', loginCtrl);
 app.controller('forgotPassCtrl', forgotPassCtrl);
+
+
+//ckeditor
+//var app = angular.module("myApp", ["ngCkeditor"]);
+  app.directive('ckEditor', function () {
+  return {
+    require: '?ngModel',
+    link: function (scope, elm, attr, ngModel) {
+      var ck = CKEDITOR.replace(elm[0]);
+      if (!ngModel) return;
+      ck.on('instanceReady', function () {
+        ck.setData(ngModel.$viewValue);
+      });
+      function updateModel() {
+        scope.$apply(function () {
+          ngModel.$setViewValue(ck.getData());
+        });
+      }
+      ck.on('change', updateModel);
+      ck.on('key', updateModel);
+      ck.on('dataReady', updateModel);
+
+      ngModel.$render = function (value) {
+        ck.setData(ngModel.$viewValue);
+      };
+    }
+  };
+});
+
+app.controller("Ckeditor", ["$scope", function($scope){
+  $scope.content = "<p> Nhập nội dung... </p>";
+}]);
+
+app.controller("mainComment", ["$scope", function($scope){
+  $scope.content = "<p> Nhập bình luận... </p>";
+}]);
