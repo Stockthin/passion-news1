@@ -1,1 +1,56 @@
-Xóa cat
+<div class="cate">
+	<h2>Delete Category</h2>
+	<hr>
+	<form class="category_page">
+		<div class="row">
+			<div class="col-md-8">
+				<div class="name_cate">
+					<label>ID</label>
+					<input class="form-control" disabled="disabled" placeholder="1" type="text">
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-8">
+				<div class="description_cate">
+				<label>Description</label>
+					<input class="form-control" disabled="disabled" placeholder="" type="text" value="DM 100">
+				</div>
+			</div>
+		</div>
+
+		<div class="button_Cate">
+			<button class="btn btn-success" type="button" data-toggle="modal" data-target="#myDeleteModal">Delete</button>
+			<!--<button class="btn btn-success" href="#">Delete</button>-->
+			<div id="myDeleteModal" class="modal fade" role="dialog" style="display: none;" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button class="close" type="button" data-dismiss="modal">×</button>
+							<h4 class="modal-title">Delete category </h4>
+						</div>
+						<div class="modal-body">
+							<div class="row">
+								<div class="col-md-12">
+									<div class="form-group">
+										<label for="#">
+											Are you sure you want to delete it?
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="modal-footer">
+								<button class="btn btn-default" type="button" data-dismiss="modal">
+									Close
+								</button>
+								<button class="btn btn-success" type="button">Delete</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<button class="btn btn-default" type="Reset">Reset</button>
+		</div>
+	</form>
+</div>
