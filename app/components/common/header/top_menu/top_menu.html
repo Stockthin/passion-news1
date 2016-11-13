@@ -6,11 +6,11 @@
             <div class="header_top">
                 <div class="header_top_left">
                     <ul class="top_nav">
-                        <li><a ui-sref="about_us">About Us</a></li>
-                        <li ng-show="show1"><a ui-sref="login">Login</a></li>
-                        <li ng-show="show1"><a ui-sref="register">Register</a></li>
-                        <li ng-show="show2"><i class="fa fa-user"></i><a ui-sref="user_profile.view">{{name}}</a></li>
-                        <li ng-show="show2"><a href="#">Logout</a></li>
+                        <li><i class="fa fa-comment" aria-hidden="true"></i><a ui-sref="about_us">About Us</a></li>
+                        <li ng-show="show1"><i class="fa fa-sign-in" aria-hidden="true"></i><a ui-sref="login">Login</a></li>
+                        <li ng-show="show1"><i class="fa fa-address-card-o" aria-hidden="true"></i><a ui-sref="register">Register</a></li>
+                        <li ng-show="show2"><i class="fa fa-user" aria-hidden="true"></i><a ui-sref="user_profile.view">{{name}}</a></li>
+                        <li ng-show="show2"><i class="fa fa-sign-out" aria-hidden="true"></i><a ng-click="logout()" href="#">Logout</a></li>
                         
                     </ul>
                 </div>

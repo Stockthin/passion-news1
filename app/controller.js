@@ -223,7 +223,15 @@ function loginCtrl($scope, $http, $cookieStore, $window, $location) {
             $http
                 .post(
                     'http://demo3004504.mockable.io/example',
-                    session
+                    JSON.stringify(session),
+                    {
+                        'Content-Type': 'application/json'
+                    }
+                    
+            
+                    // 'http://192.168.1.12:8000/api/v1/authentication/sign_in/',
+                    // session,
+                    // {'Content-Type': 'application/json'}
                 )
                 .then(function (respone) {
                     // console.log(respone);
@@ -270,16 +278,31 @@ function forgotPassCtrl() {
 
 }
 //Top Header 
-function topHeaderCtrl($scope, $cookieStore) {
+function topHeaderCtrl($scope, $cookieStore, $location, $window) {
     $scope.show1 = true;
     $scope.show2 = false;
-    if ($cookieStore.get('session_token')) {
+    $scope.session_token = {};
+    // if($cookieStore.get('session_user')) {
+    //   console.log('Không có tài khoản nào');
+    // } else{
+    //   $cookieStore.remove('session_user');
+    //   // $location.path('/home');
+    // }
+    if($cookieStore.get('session_token')) {
         $scope.show1 = false;
         $scope.show2 = true;
         $scope.name = $cookieStore.get('session_user').first_name;
         console.log($cookieStore.get('session_token'));
-        // $cookieStore.remove($cookieStore.get('session_token'));
+        $scope.logout = function (){
+            // var session_token = {};
+            $cookieStore.remove('session_token');
+            $location.path('/home');
+            $window.location.reload();
+            // console.log('logout');
+        }
+       
     }
+   
 }
 //Avatar Custom
 function avatarCustomCtrl($scope) {
@@ -288,6 +311,11 @@ function avatarCustomCtrl($scope) {
         $scope.show_manager = true;
     }
 }
+//
+function addCatCtrl(){
+    
+}
+app.controller('addCatCtrl', addCatCtrl);
 app.controller('avatarCustomCtrl', avatarCustomCtrl);
 app.controller('mainCtrl', mainCtrl);
 app.controller('viewProCtrl', viewProCtrl);

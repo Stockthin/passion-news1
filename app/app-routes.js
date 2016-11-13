@@ -1,4 +1,4 @@
-function config($stateProvider, $urlRouterProvider) {
+function config($stateProvider, $urlRouterProvider, $locationProvider) {
 
     $urlRouterProvider.otherwise("/home");
     $stateProvider
@@ -75,6 +75,12 @@ function config($stateProvider, $urlRouterProvider) {
             // controller: 'abouUsCtrl as aboutUs',
 
         })
+        // .state('user_profile.editCat', {
+        //     url: '/edit_cat/:id',
+        //     templateUrl: 'app/components/user_profile/manager_cat/edit_cat/edit_cat.html',
+        //     // controller: 'categoriesCtrl as categories'
+        
+        // })
         .state('user_profile.deleteCat', {
             url: '/delete_cat',
             templateUrl: 'app/components/user_profile/manager_cat/delete_cat/delete_cat.html',
@@ -125,23 +131,24 @@ function config($stateProvider, $urlRouterProvider) {
             }
         })
 
-    //Login
-    .state('login', {
-        url: '/login',
-        templateUrl: 'app/components/login/login.html',
-        controller: 'loginCtrl as login',
-        data: {
-            pageTitle: 'LOGIN'
-        }
-    })
+        //Login
+        .state('login', {
+            url: '/login',
+            templateUrl: 'app/components/login/login.html',
+            controller: 'loginCtrl as login',
+            data: {
+                pageTitle: 'LOGIN'
+            }
+        })
 
-     .state('forgot_pass', {
-       url: "/forgot_password",
-     templateUrl: "app/components/forgot_password/forgot_password.html",
-    controller: 'forgotPassCtrl as forgot',
-    data: {
-      pageTitle: 'FORGOT'
-       }
-       });
+        .state('forgot_pass', {
+           url: "/forgot_password",
+         templateUrl: "app/components/forgot_password/forgot_password.html",
+        controller: 'forgotPassCtrl as forgot',
+        data: {
+          pageTitle: 'FORGOT'
+           }
+           });
+        $locationProvider.html5Mode(true);
 }
 app.config(config);
