@@ -22,7 +22,7 @@
 }
 
 .feature .feature-bot {
-    padding: 7px 42px;
+    padding: 0px 42px;
 }
 
 .feature .feature-bot a {
@@ -30,7 +30,7 @@
 }
 
 .feature .feature-top {
-    padding: 20px 0px;
+    /* padding: 20px 0px; */
     text-align: center;
 }
 
@@ -45,7 +45,7 @@
 }
 
 .feature .manager-bot {
-    padding: 7px 42px;
+    padding: 0px 42px;
 }
 
 .feature .manager-bot li {
@@ -53,12 +53,12 @@
 }
 
 .feature hr {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    border-color: #ddd;
+    /* margin-top: 20px; */
+    /* margin-bottom: 20px; */
+    /* border-color: #ddd; */
 }
 
 .feature .feature-top span {
-    padding-top: 20px;
-    text-align: center;
+    /* padding-top: 20px; */
+    /* text-align: center; */
 }

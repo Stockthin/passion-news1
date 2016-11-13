@@ -1,38 +1,30 @@
-<div class="content" ng-controller="addCatCtrl">
-<a ui-sref=".editCat">Test</a>
-	<div class="cate">
-		
-		<h2>Add Category</h2>
-		<hr>
-		<div class="row">
-			<div class="col-md-8">
-				<div class="name_cate">
-					<label>Name</label>
-					<input class="form-control" placeholder="Ex: Danh muc thu 100" type="text">
-				</div>
-			</div>
-		</div>
-		<!--<div class="row">
-			<div class="col-md-8">
-				<div class="description_cate">
-				<label>Description</label>
-					<input class="form-control" placeholder="Ex: DM 100" type="text">
-				</div>
-			</div>
-		</div>-->
 
-		<div class="button_Cate">
-			<button class="btn btn-success" href="#">Add</button>
-			<button class="btn btn-default" type="Reset">Reset</button>
-		</div>
-	</div>
+<div class="box box-add wow fadeInRight">
+    <h2>Add Category</h2>
+
+    <div class="row">
+        <div class="form-group">
+            <label class="control-label">Name</label>
+            <input type="text" class="form-control" placeholder="Enter name of Category">
+        </div>
+    </div>
+
+    <div class="button_Cate">
+        <button class="btn btn-success" href="#">Add</button>
+        <button class="btn btn-default" type="Reset">Reset</button>
+    </div>
+</div>
+
+
+<!--Hien thi thong tin category-->
+<div class="box box-danger wow fadeInRight">
+    <div class="row">
+
+        <h2><i class="fa fa-pencil" aria-hidden="true"></i>List of categories</h2>
 
 	<!--Hien thi thong tin category-->
-	<div class="box box-danger">
-		<div class="row">
-			<hr>
-			<h2>List of categories</h2>
-		</div>
+	
+		
 		<div class="box-body">
 			<div class="row">
 				<div class="col-md-12">
@@ -169,5 +161,5 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	
 </div>

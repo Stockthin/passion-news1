@@ -1,0 +1,15 @@
+.modal-body label {
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+
+.form-group {
+    font-style: italic;
+}
+
+.box.box-add {
+    border-top-color: #f39c12;
+    margin-top: 20px;
+    padding: 0px 75px 20px;
+}

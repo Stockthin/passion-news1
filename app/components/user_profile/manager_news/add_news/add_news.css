@@ -50,6 +50,11 @@
     padding: 10px;
 }
 
+.box.box-ad {
+    border-top-color: #f39c12;
+    margin-top: 20px;
+}
+
 .box.box-add {
     border-top-color: #f39c12;
     margin-top: 20px;
@@ -82,8 +87,8 @@
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
 }
 
-.modal-body label {
-    /* padding: 0px; */
+.table {
+    padding: 0px 50px;
 }
 
 
