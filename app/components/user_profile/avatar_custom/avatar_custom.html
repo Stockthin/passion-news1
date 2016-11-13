@@ -33,36 +33,38 @@
             <div class="feature-bot">
                 <ul>
                     <li><a ui-sref=".edit"><i class="fa fa-cog" aria-hidden="true"></i>&nbsp Edit your profile</a></li>
-                    <li><a ui-sref=".change_pass"><i class="fa fa-cog" aria-hidden="true"></i>&nbsp Change password</a></li>
-                    <li><a ui-sref=".post"><i class="fa fa-book" aria-hidden="true"></i>&nbsp Post news</a></li>
+                    <li><a ui-sref=".change_pass"><i class="fa fa-lock" aria-hidden="true"></i>&nbsp Change password</a></li>
+                    <li><a ui-sref=".post"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>&nbsp Post news</a></li>
                     <li><a ui_sref=".view"><i class="fa fa-book" aria-hidden="true"></i>&nbsp User information</a></li>
                 </ul>
             </div>
-        </div>
+            <hr>
             <div class="feature-top">
                 <p><span>Manager</span></p>
             </div>
-            <hr/>
-            <div class="Manager-bot">
-               <ul>
+
+            <div class="manager-bot">
+                <ul>
                     <li>
-                        <i class="fa fa-newspaper-o"></i>&nbsp <a href="">News &nbsp<i class="fa fa-chevron-down"></i></a>
+                        <i class="fa fa-plus"></i>&nbsp <a href="">News &nbsp<i class="fa fa-chevron-down"></i></a>
                         <ul>
                             <li><a ui-sref=".addNews">Add News</a></li>
                             <li><a ui-sref=".editNews">Edit News</a></li>
                             <li><a ui-sref=".deleteNews">Delete News</a></li>
                         </ul>
                     </li>
-                   <li>
+                    <li>
                         <i class="fa fa-newspaper-o"></i>&nbsp <a href="">Categories &nbsp<i class="fa fa-chevron-down"></i></a>
                         <ul>
                             <li><a ui-sref=".addCat">Add cate</a></li>
                             <li><a ui-sref=".editCat">Edit cate</a></li>
                             <li><a ui-sref=".deleteCat">Delete cate</a></li>
                         </ul>
-                    </li>  
+                    </li>
                 </ul>
-              <!--   Click me: <input type="checkbox" ng-model="checked" aria-label="Toggle ngShow"><br/>
+            </div>
+
+            <!--   Click me: <input type="checkbox" ng-model="checked" aria-label="Toggle ngShow"><br/>
                 <div>
                   Show:
                   <div ng-show="checked">
@@ -75,8 +77,7 @@
                     <span class="glyphicon glyphicon-thumbs-down"></span> I hide when your checkbox is checked.
                   </div>
                 </div> -->
-            </div>
         </div>
     </div>
 </div>
-    
+</div>

@@ -184,12 +184,12 @@ function mainMenuCtrl($scope, $http) {
 
 //User profile
 function userProCtrl($scope, $cookieStore) {
-    if($cookieStore.get('session_token')) {
+    if ($cookieStore.get('session_token')) {
         $scope.first_name = $cookieStore.get('session_user').first_name;
         $scope.last_name = $cookieStore.get('session_user').last_name;
         $scope.email = $cookieStore.get('session_user').email;
         // console.log($cookieStore.get('session_token'));
-         // $cookieStore.remove($cookieStore.get('session_token'));
+        // $cookieStore.remove($cookieStore.get('session_token'));
     }
 }
 
@@ -207,35 +207,35 @@ function registerCtrl() {
 
 }
 //Login
-function loginCtrl($scope, $http, $cookieStore, $window, $location){
+function loginCtrl($scope, $http, $cookieStore, $window, $location) {
     $scope.area_message = false;
     $scope.message1 = '';
     $scope.message2 = '';
     $scope.message3 = '';
-    $scope.login = function(){
-        if($scope.email != null && $scope.password != null) {
-             var session = {
+    $scope.login = function () {
+        if ($scope.email != null && $scope.password != null) {
+            var session = {
                 'email': $scope.email,
                 'pass': $scope.password
             };
             console.log(session);
             //  // console.log(session);
             $http
-                .post (
+                .post(
                     'http://demo3004504.mockable.io/example',
                     session
                 )
-                .then (function (respone) {
+                .then(function (respone) {
                     // console.log(respone);
                     var data = respone.data;
                     var message = '';
                     console.log(respone);
-                    if(respone.data.user) {
+                    if (respone.data.user) {
                         $scope.profile = respone.data.user;
                         $cookieStore.put('session_user', $scope.profile);
                         $cookieStore.put('session_token', $scope.profile.access_token);
-                        console.log( $cookieStore.get('session_user'));
-                        console.log( $cookieStore.get('session_token'));
+                        console.log($cookieStore.get('session_user'));
+                        console.log($cookieStore.get('session_token'));
                         // console.log(access_token);
                         $location.path('/home');
                         $window.location.reload();
@@ -247,22 +247,22 @@ function loginCtrl($scope, $http, $cookieStore, $window, $location){
                         // message = error1.message;
                         console.log(error1.message);
                     }
-                    if(respone.data.error2) {
+                    if (respone.data.error2) {
                         var error2 = respone.data.error2;
                         $scope.area_message = true;
                         $scope.message2 = error2.message;
                         // message = error2.message;
                         console.log(error2.message);
                     }
-                    
+
                     // console.log(respone.data);
-                    
+
                 });
-         } //else {
+        } //else {
         //     $scope.message3 = "Email hoặc mật khẩu không đúng";
         // }
-       
-  
+
+
     }
 }
 //Forgot Password
@@ -273,18 +273,18 @@ function forgotPassCtrl() {
 function topHeaderCtrl($scope, $cookieStore) {
     $scope.show1 = true;
     $scope.show2 = false;
-    if($cookieStore.get('session_token')) {
+    if ($cookieStore.get('session_token')) {
         $scope.show1 = false;
         $scope.show2 = true;
         $scope.name = $cookieStore.get('session_user').first_name;
         console.log($cookieStore.get('session_token'));
-         // $cookieStore.remove($cookieStore.get('session_token'));
+        // $cookieStore.remove($cookieStore.get('session_token'));
     }
 }
 //Avatar Custom
-function avatarCustomCtrl($scope){
+function avatarCustomCtrl($scope) {
     $scope.show_manager = false;
-    $scope.clickManager = function(){
+    $scope.clickManager = function () {
         $scope.show_manager = true;
     }
 }
@@ -307,35 +307,38 @@ app.controller('forgotPassCtrl', forgotPassCtrl);
 
 //ckeditor
 //var app = angular.module("myApp", ["ngCkeditor"]);
-  app.directive('ckEditor', function () {
-  return {
-    require: '?ngModel',
-    link: function (scope, elm, attr, ngModel) {
-      var ck = CKEDITOR.replace(elm[0]);
-      if (!ngModel) return;
-      ck.on('instanceReady', function () {
-        ck.setData(ngModel.$viewValue);
-      });
-      function updateModel() {
-        scope.$apply(function () {
-          ngModel.$setViewValue(ck.getData());
-        });
-      }
-      ck.on('change', updateModel);
-      ck.on('key', updateModel);
-      ck.on('dataReady', updateModel);
+app.directive('ckEditor', function () {
+    return {
+        require: '?ngModel',
+        link: function (scope, elm, attr, ngModel) {
+            var ck = CKEDITOR.replace(elm[0]);
+            if (!ngModel) return;
+            ck.on('instanceReady', function () {
+                ck.setData(ngModel.$viewValue);
+            });
 
-      ngModel.$render = function (value) {
-        ck.setData(ngModel.$viewValue);
-      };
-    }
-  };
+            function updateModel() {
+                scope.$apply(function () {
+                    ngModel.$setViewValue(ck.getData());
+                });
+            }
+            ck.on('change', updateModel);
+            ck.on('key', updateModel);
+            ck.on('dataReady', updateModel);
+
+            ngModel.$render = function (value) {
+                ck.setData(ngModel.$viewValue);
+            };
+        }
+    };
 });
-
-app.controller("Ckeditor", ["$scope", function($scope){
-  $scope.content = "<p> Nhập nội dung... </p>";
+app.controller("Ckeditor", ["$scope", function ($scope) {
+    $scope.content = "<p>Nhập văn bản...</p>";
+}]);
+app.controller("Ckeditor1", ["$scope", function ($scope) {
+    $scope.content = "<p>Năm 2015, bảng bình chọn nghệ sĩ bị ghét nhất làng giải trí Hoa ngữ được công bố. Điều đáng nói, Angela Baby là nghệ sĩ nữ đứng đầu bảng xếp hạng này, chỉ sau Trần Hách - kẻ ngoại tình không thể yêu thương nổi. Kể từ khi ra nhập làng giải trí, Angela Baby là một trong số những nghệ sĩ sở hữu lượng anti fan hùng hậu. Vậy, tại sao, đã hơn 10 năm trôi qua, vì những lý do gì mà Angela Baby luôn bị gán mác Mỹ nhân thủ đoạn của làng giải trí đến vậy?</p>";
 }]);
 
-app.controller("mainComment", ["$scope", function($scope){
-  $scope.content = "<p> Nhập bình luận... </p>";
+app.controller("mainComment", ["$scope", function ($scope) {
+    $scope.content = "<p> Nhập bình luận... </p>";
 }]);

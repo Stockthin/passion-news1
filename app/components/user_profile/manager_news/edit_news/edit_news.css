@@ -1,0 +1,50 @@
+ /*EDIT NEWS*/
+ 
+ .edit_news .form {
+     padding-top: 7px;
+ }
+ 
+ .edit_news .form .form-group label {
+     font-style: normal;
+     padding-bottom: 13px;
+     font-size: 17px;
+ }
+ 
+ .edit_news .form .img input {
+     padding-top: 80px;
+ }
+ 
+ .edit_news .form .form-group select {
+     font-style: normal;
+ }
+ 
+ .edit_news .form .form-group .describe textarea {
+     min-height: 75px;
+ }
+ 
+ .edit_news .form .form-group textarea {
+     min-height: 300px;
+ }
+ 
+ .edit_news .form .submit button {
+     background: #39b54a;
+     border-color: #4cae4c;
+     float: right;
+     margin-bottom: 20px;
+     margin-right: 10px;
+ }
+ 
+ .form-group {
+     font-style: italic;
+     /* padding-top: 20px; */
+ }
+ 
+ .edit_news {
+     background-color: #fff;
+     display: inline-block;
+     float: left;
+     margin-bottom: 20px;
+     padding: 0 75px;
+     width: 100%;
+     margin-top: 20px;
+ }
