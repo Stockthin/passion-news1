@@ -24,21 +24,40 @@
 .feature .feature-bot {
     padding: 7px 42px;
 }
-.feature .feature-bot a{
+
+.feature .feature-bot a {
     padding: 0px 30px;
 }
 
 .feature .feature-top {
+    padding: 20px 0px;
+    text-align: center;
+}
+
+.feature.feature-top a {
+    padding: 0px 30px;
+}
+
+.feature .feature-top span {
     text-align: center;
     font-size: 24px;
     font-weight: 600;
-    
 }
+
+.feature .manager-bot {
+    padding: 7px 42px;
+}
+
+.feature .manager-bot li {
+    padding: 0px 30px;
+}
+
 .feature hr {
     margin-top: 0px;
     margin-bottom: 0px;
-    border-color:#ddd;
+    border-color: #ddd;
 }
+
 .feature .feature-top span {
     padding-top: 20px;
     text-align: center;

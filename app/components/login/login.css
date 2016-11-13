@@ -58,7 +58,7 @@ h2 {
 }
 
 .social {
-    float: right;
+   /* float: right;*/
 }
 
 .social .social-fb {
@@ -102,4 +102,8 @@ h2 {
 
 .note a:hover {
     text-decoration: underline
+}
+
+.login_form .form-actions .col-xs-12{
+    text-align: center;
 }

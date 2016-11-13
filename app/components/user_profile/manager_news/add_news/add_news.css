@@ -1,0 +1,150 @@
+/*ADD NEWS*/
+
+.box .box-add .form {
+    padding-top: 7px;
+}
+
+.box .box-add .form .form-group label {
+    font-style: normal;
+    padding-bottom: 13px;
+    font-size: 17px;
+}
+
+.box .box-add .form .img input {
+    padding-top: 80px;
+}
+
+.box .box-add .form .form-group select {
+    font-style: normal;
+}
+
+.box .box-add .form .form-group .describe textarea {
+    min-height: 75px;
+}
+
+.box .box-add .form .form-group textarea {
+    min-height: 300px;
+}
+
+.box .box-add .form .submit button {
+    background: #39b54a;
+    border-color: #4cae4c;
+    float: right;
+    margin-bottom: 20px;
+    margin-right: 10px;
+}
+
+.form-group {
+    font-style: italic;
+    /* padding-top: 20px; */
+}
+
+
+/* LIST NEWS*/
+
+.box-body {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    padding: 10px;
+}
+
+.box.box-add {
+    border-top-color: #f39c12;
+    margin-top: 20px;
+    padding: 0px 75px 20px;
+}
+
+.box.box-add .form .img input {
+    padding-top: 80px;
+}
+
+.box.box-danger {
+    border-top-color: #dd4b39;
+}
+
+.box-body table .sorting_disabled {
+    text-align: center;
+}
+
+.box-body table .odd {
+    text-align: center;
+}
+
+.box {
+    position: relative;
+    border-radius: 3px;
+    background: #ffffff;
+    border-top: 3px solid #d2d6de;
+    margin-bottom: 40px;
+    width: 100%;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.modal-body label {
+    /* padding: 0px; */
+}
+
+
+/*EDIT NEWS*/
+
+.modal-body .delete label {
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+
+
+/*.modal-body .form-group label {
+     font-style: normal;
+     padding-bottom: 46px;
+     font-size: 17px;
+     display: inline-table;
+     float: left;
+ }
+ 
+ .modal-body .form-group input {
+     float: right;
+ }
+ 
+ .modal-body .img input {
+     /* padding-top: 80px; */
+
+
+/*float: right;
+ padding-right: 138px;
+}
+.modal-body .form-group select {
+    font-style: normal;
+    float: right;
+}
+.modal-body .form-group .describe textarea {
+    min-height: 75px;
+    float: right;
+    margin: -12px 0px 12px 0px;
+}
+.modal-body.form-group textarea {
+    min-height: 300px;
+}
+.modal-body.form-group detail textarea {
+    min-height: 75px;
+}
+.modal-body .submit button {
+    background: #39b54a;
+    border-color: #4cae4c;
+    float: right;
+    margin-bottom: 20px;
+    margin-right: 10px;
+}
+*/
+
+.form-group {
+    font-style: italic;
+    padding-top: 20px;
+    width: 100%;
+}
+
+.modal {
+    background: rgba(0, 0, 0, 0.7);
+}
