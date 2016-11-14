@@ -1,15 +1,13 @@
 .avatar-img {
     border: 1px solid #ddd;
     border-radius: 50%;
-    padding: 3%;
-    width: 53.8vh;
-    background-size: 100%;
-    height: 54vh;
+    padding: 20px;
+    width: 100%
 }
 
 .edit-avatar {
     text-align: center;
-    padding: 8% 0;
+    padding: 23px 0px;
 }
 
 .edit-avatar a {}
@@ -19,26 +17,16 @@
 .avatar-img img {
     border-radius: 50%;
 }
+.table {
+    width:60%;
 
-.ava-cus {
-    background-image: url(/assets/img/profiles/m6.jpg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    width: 50vh;
-    height: 50vh;
-    border-radius: 50%;
 }
-
 .feature {
     padding-bottom: 15px;
 }
 
 .feature .feature-bot {
-    padding: 0px 42px;
-}
-
-.ava_cus {
-    padding: 0px 10%;
+    padding: 7px 42px;
 }
 
 .feature .feature-bot a {
@@ -46,7 +34,7 @@
 }
 
 .feature .feature-top {
-    /* padding: 20px 0px; */
+    padding: 20px 0px;
     text-align: center;
 }
 
@@ -61,7 +49,7 @@
 }
 
 .feature .manager-bot {
-    padding: 0px 42px;
+    padding: 7px 42px;
 }
 
 .feature .manager-bot li {
@@ -69,104 +57,12 @@
 }
 
 .feature hr {
-    /* margin-top: 20px; */
-    /* margin-bottom: 20px; */
-    /* border-color: #ddd; */
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-color: #ddd;
 }
 
 .feature .feature-top span {
-    /* padding-top: 20px; */
-    /* text-align: center; */
-}
-
-@media(max-width:991px) {
-    .avatar-img {
-        border: 1px solid #ddd;
-        border-radius: 50%;
-        padding: 3%;
-        width: 42.7vh;
-        background-size: 100%;
-        height: 43vh;
-    }
-    .edit-avatar {
-        text-align: center;
-        padding: 8% 0;
-    }
-    .ava-cus {
-        background-image: url(/assets/img/profiles/m6.jpg);
-        background-repeat: no-repeat;
-        background-size: 100%;
-        width: 40vh;
-        height: 40vh;
-        border-radius: 50%;
-    }
-}
-
-@media(max-width:660px) {
-    .avatar-img {
-        border: 1px solid #ddd;
-        border-radius: 50%;
-        padding: 3%;
-        width: 32.7vh;
-        background-size: 100%;
-        height: 32vh;
-    }
-    .edit-avatar {
-        text-align: center;
-        padding: 8% 0;
-    }
-    .ava-cus {
-        background-image: url(/assets/img/profiles/m6.jpg);
-        background-repeat: no-repeat;
-        background-size: 100%;
-        width: 30vh;
-        height: 30vh;
-        border-radius: 50%;
-    }
-}
-
-@media(max-width:516px) {
-    .avatar-img {
-        border: 1px solid #ddd;
-        border-radius: 50%;
-        padding: 3%;
-        width: 22.1vh;
-        background-size: 100%;
-        height: 22vh;
-    }
-    .edit-avatar {
-        text-align: center;
-        padding: 8% 0;
-    }
-    .ava-cus {
-        background-image: url(/assets/img/profiles/m6.jpg);
-        background-repeat: no-repeat;
-        background-size: 100%;
-        width: 20vh;
-        height: 20vh;
-        border-radius: 50%;
-    }
-}
-
-@media(max-width:350px) {
-    .avatar-img {
-        border: 1px solid #ddd;
-        border-radius: 50%;
-        padding: 3%;
-        width: 12.1vh;
-        background-size: 100%;
-        height: 12vh;
-    }
-    .edit-avatar {
-        text-align: center;
-        padding: 8% 0;
-    }
-    .ava-cus {
-        background-image: url(/assets/img/profiles/m6.jpg);
-        background-repeat: no-repeat;
-        background-size: 100%;
-        width: 11vh;
-        height: 11vh;
-        border-radius: 50%;
-    }
+    padding-top: 20px;
+    text-align: center;
 }
