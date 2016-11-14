@@ -3,7 +3,7 @@
                 <div class="content_top">
                     <div class="row">
                        <!-- start content top latest slider -->
-                      <div class="col-lg-6 col-md-6 col-sm-12 top1_new">             
+                      <div class="col-lg-6 col-md-6 col-sm-6 top1_new">             
                         <div class="latest_slider">
                            <!-- Set up your HTML -->
                           <div class="slick_slider">
@@ -55,7 +55,7 @@
                           <!-- Tin nổi bật của mỗi danh mục tin -->
                           <div class="games_fashion_area">
                             <!--Item-->
-                            <div class="col-xs-6 col-sm-6 col-md-4 col-sm-4 item_categories" ng-repeat="news_by_category in news_by_categories">
+                            <div class="col-md-4 col-sm-4 item_categories" ng-repeat="news_by_category in news_by_categories">
                               <div class="single_category">
                                 <!--Tên Danh mục tin-->
                                 <h2>                  
@@ -71,7 +71,7 @@
                                       <!-- <a ui-sref="detail"><img alt="img" src="{{news_by_category.news[0].UrlImage}}"></a> -->
                                       <a  ui-sref="detail({id : news_by_category.news[0].IDNews})" class="design_img design_img_2 news_by_categories"  ng-style="{'background-image': 'url(' + news_by_category.news[0].UrlImage + ')'}"></a>
                                    </div>
-                                    <h2 class="catg_titile"><a style="font-size:20px; font-weight:bold;" ui-sref="detail({id : news_by_category.news[0].IDNews})">{{news_by_category.news[0].Title}}</a></h2>
+                                    <h2 class="catg_titile"><a ui-sref="detail({id : news_by_category.news[0].IDNews})">{{news_by_category.news[0].Title}}</a></h2>
                                     <div class="comments_box">
                                       <span class="meta_date">14/12/2013</span>
                                       
@@ -87,7 +87,7 @@
                                         <img src="assets/img/news/112x112.jpg" alt="img">
                                       </a>
                                       <div class="media-body">
-                                        <h4 class="media-heading"><a style="font-size: 15px; font-weight:bold;" ui-sref="detail({id : other_news_by_cat.IDNews})">{{other_news_by_cat.Title}}</a></h4> 
+                                        <h4 class="media-heading"><a ui-sref="detail({id : other_news_by_cat.IDNews})">{{other_news_by_cat.Title}}</a></h4> 
                                         <div class="comments_box">
                                           <span class="meta_date">14/12/2013</span>
                                           <span class="meta_comment"><a href="#">No Comments</a></span>
