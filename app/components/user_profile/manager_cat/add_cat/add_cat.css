@@ -1,15 +1,15 @@
-.modal-body label {
-    text-align: center;
-    padding-bottom: 20px;
-    font-size: 20px;
+.ID {
+	width: 260.567px;
 }
-
-.form-group {
-    font-style: italic;
+.Description {
+	width: 221.567px;
 }
-
-.box.box-add {
-    border-top-color: #f39c12;
-    margin-top: 20px;
-    padding: 0px 75px 20px;
+.Edit {
+	width: 159.567px;
+}
+.Delete {
+	width: 156px;
+}
+.fade {
+	display: none;
 }
