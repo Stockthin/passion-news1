@@ -20,19 +20,12 @@
 }
 
 .submit {
-    /* margin-top: 30px; */
-    text-align: center;
-    padding-bottom: 20px;
-    /* margin-right: 290px; */
-    /* padding: 8px 43px; */
-    /* font-size: 15px; */
+    margin-top: 30px;
+    margin-right: 290px;
+    padding: 8px 43px;
+    font-size: 15px;
     /* background-color: #3fb352; */
-    /* border: #3fb352; */
-}
-
-.update {
-    text-align: center;
-    padding-top: 20px;
+    border: #3fb352;
 }
 
 label {
@@ -43,4 +36,11 @@ label {
     padding-top: 30px;
     margin-left: -42px;
     margin-right: 10px;
+}
+
+.res {
+    width:  100%;
+}
+.border {
+    background: #fff;
 }

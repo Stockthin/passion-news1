@@ -107,3 +107,20 @@ h2 {
 .login_form .form-actions .col-xs-12{
     text-align: center;
 }
+
+@media screen and (max-width: 600px) {
+    .input-group {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .remember {
+        padding-left: 0px !important;
+    }
+    .forgot-pass {
+        padding-right: 15px !important;
+    }
+    .form-actions {
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+    }
+}

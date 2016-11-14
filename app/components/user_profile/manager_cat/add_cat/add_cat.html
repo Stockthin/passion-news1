@@ -1,17 +1,14 @@
 <div class="content">
-	<div class="cate" ng-controller="addCatCtrl">
+	<div class="cate">
 		<h2>Add Category</h2>
 		<hr>
 		<div class="row">
-			<form class="form" ng-submit="submitForm()">
 			<div class="col-md-8">
 				<div class="name_cate">
 					<label>Name</label>
-					<input class="form-control" placeholder="Ex: Danh muc" type="text" ng-model="cat.name">
+					<input class="form-control" placeholder="Ex: Danh muc thu 100" type="text">
 				</div>
-				<button class="btn btn-success" href="#">Add</button>
 			</div>
-			</form>
 		</div>
 		<!--<div class="row">
 			<div class="col-md-8">
@@ -21,7 +18,11 @@
 				</div>
 			</div>
 		</div>-->
-			
+
+		<div class="button_Cate">
+			<button class="btn btn-success" href="#">Add</button>
+			<button class="btn btn-default" type="Reset">Reset</button>
+		</div>
 	</div>
 
 	<!--Hien thi thong tin category-->
@@ -52,10 +53,10 @@
 								<table id="example1" class="table table-bordered table-striped dataTable no-footer" role="grid" aria-describedby="example1_info">
 									<thead>
 										<tr role="row">
-											<th class="ID" rowspan="1" colspan="1">ID</th>
-											<th class="Description" rowspan="1" colspan="1">Description</th>
-											<th class="Edit" rowspan="1" colspan="1" >Edit</th>
-											<th class="Delete" rowspan="1" colspan="1" >Delete</th>
+											<th class="sorting_disabled" rowspan="1" colspan="1" style="width: 260.567px;">ID</th>
+											<th class="sorting_disabled" rowspan="1" colspan="1" style="width: 221.567px;">Description</th>
+											<th class="sorting_disabled" rowspan="1" colspan="1" style="width: 159.567px;">Edit</th>
+											<th class="sorting_disabled" rowspan="1" colspan="1" style="width: 156px;">Delete</th>
 										</tr>
 									</thead>
 
@@ -69,7 +70,7 @@
 											<td>
 												<button class="btn btn-danger btn-sm" type="button" data-toggle="modal" data-target="#myDeleteModal">Delete</button>
 
-												<div id="myDeleteModal" class="modal fade" role="dialog" aria-hidden="true">
+												<div id="myDeleteModal" class="modal fade" role="dialog" style="display: none;" aria-hidden="true">
 													<div class="modal-dialog">
 														<div class="modal-content">
 															<div class="modal-header">

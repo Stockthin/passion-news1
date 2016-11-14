@@ -1,6 +1,7 @@
 .register_form {      
     background: url(/assets/img/news/register.jpg);
-    padding: 34px 60px 34px 60px;
+    padding: 34px 10%;
+    width: 100%;
 }
 h2{
         padding-top: 7px;
@@ -8,43 +9,97 @@ h2{
 .input-group {padding: 13px 35px;}
 .register_form .form{
    background-color: #fff;
-   padding: 0px 50px;
+
+   padding: 0px 4%;
    /* margin: 30px 0px 30px 0px; */
 }
 
 
 .register_form .form-actions {
-    padding: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    
 }
-.register_form .form-actions a{
-padding-left: 70px;
-    
-padding-right: 70px;
-    
-font-weight: 600;
-    
-font-size: 16px;
+.register_form .form-actions .col-lg-4 a{
+    padding-left: 28%;
+    padding-right: 28%;
+    font-weight: 600;
+    font-size: 16px;
+    margin-left: 28%;
 }
-.register_form .form-actions button{
-    
-padding-left: 70px;
-    
-padding-right: 70px;
-    
-font-weight: 600;
-    
-font-size: 16px;
+.register_form .form-actions .col-lg-4 button{
+    padding-left: 28%;
+    padding-right: 28%;
+    font-weight: 600;
+    font-size: 16px;
 }
-.register_form .form-actions .col-sm-4 {
-	margin-left: 40px;
+.register_form .form-actions .col-md-4 a{
+    padding-left: 28%;
+    padding-right: 28%;
+    font-weight: 600;
+    font-size: 16px;
+    margin-left: 28%;
+}
+.register_form .form-actions .col-md-4 button{
+    padding-left: 28%;
+    padding-right: 28%;
+    font-weight: 600;
+    font-size: 16px;
+}
+.register_form .form-actions .col-sm-4 a{
+    padding-left: 28%;
+    padding-right: 28%;
+    font-weight: 600;
+    font-size: 16px;
+    margin-left: 28%;
+}
+.register_form .form-actions .col-sm-4 button{
+    padding-left: 28%;
+    padding-right: 28%;
+    font-weight: 600;
+    font-size: 16px;
+}
+.register_form .form-actions .col-xs-12 a{
+   
+    font-weight: 600;
+    font-size: 16px;
+    margin-left: 2%;
+
+}
+.register_form .form-actions .col-xs-12 button{
+   
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 10px;
+    margin-left: 0%;
+}
+
+@media screen and (max-width: 550px) {
+  .my-btn {
+    display: block !important;
+    width: 80%;
+    margin : auto;
+  }
+  .btn-success {
+    margin-bottom: 10px;
+  }
+}
+
+
+.btn-custom {
+  
+padding: 7px 40px;
+}
+/*.register_form .form-actions .col-sm-4 {
+  margin-left: 40px;
 }
 .register_form .form-actions .col-md-4 {
-	margin-left: 40px;
+  margin-left: 40px;
 }
 .register_form .form-actions .col-xs-12 button {
-		margin-bottom: 20px;
-	    margin-left: -6px;
+    margin-bottom: 20px;
+      margin-left: -6px;
 }
 .register_form .form-actions .col-xs-12 a {
-	   margin-left: -3px;
-}
+     margin-left: -3px;
+}*/
