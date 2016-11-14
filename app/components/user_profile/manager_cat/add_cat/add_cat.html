@@ -1,4 +1,3 @@
-
 <div class="box box-add wow fadeInRight">
     <h2>Add Category</h2>
 
@@ -22,144 +21,144 @@
 
         <h2><i class="fa fa-pencil" aria-hidden="true"></i>List of categories</h2>
 
-	<!--Hien thi thong tin category-->
-	
-		
-		<div class="box-body">
-			<div class="row">
-				<div class="col-md-12">
-					<div id="example1_wrapper" class="dataTables_wrapper form-inline dt-bootstrap no-footer">
-						<div class="row">
-							<div class="col-sm-5"></div>
-							<div class="col-sm-7">
-								<div id="example1_filter" class="dataTables_filter">
-									<label>
-										Search:
-										<input class="form-control input-sm" placeholder="" aria-controls="example1" type="search">
-									</label>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-sm-12">
-								<table id="example1" class="table table-bordered table-striped dataTable no-footer" role="grid" aria-describedby="example1_info">
-									<thead>
-										<tr role="row">
-											<th class="sorting_disabled" rowspan="1" colspan="1" style="width: 260.567px;">ID</th>
-											<th class="sorting_disabled" rowspan="1" colspan="1" style="width: 221.567px;">Description</th>
-											<th class="sorting_disabled" rowspan="1" colspan="1" style="width: 159.567px;">Edit</th>
-											<th class="sorting_disabled" rowspan="1" colspan="1" style="width: 156px;">Delete</th>
-										</tr>
-									</thead>
+        <!--Hien thi thong tin category-->
 
-									<tbody>
-										<tr class="odd" role="row">
-											<td>1</td>
-											<td>DM 100</td>
-											<td>
-												<a ui-sref=".editCat">Edit</a>
-											</td>
-											<td>
-												<button class="btn btn-danger btn-sm" type="button" data-toggle="modal" data-target="#myDeleteModal">Delete</button>
 
-												<div id="myDeleteModal" class="modal fade" role="dialog" style="display: none;" aria-hidden="true">
-													<div class="modal-dialog">
-														<div class="modal-content">
-															<div class="modal-header">
-																<button class="close" type="button" data-dismiss="modal">×</button>
-																<h4 class="modal-title">Delete category </h4>
-															</div>
-															<div class="modal-body">
-																<div class="row">
-																	<div class="col-md-12">
-																		<div class="form-group">
-																			<label for="#">
-																				Are you sure you want to delete it?
-																			</label>
-																		</div>
-																	</div>
-																</div>
-																<div class="modal-footer">
-																	<button class="btn btn-default" type="button" data-dismiss="modal">
-																		Close
-																	</button>
-																	<button class="btn btn-success" type="button">Delete</button>
-																</div>
-															</div>
-														</div>
-													</div>
-												</div>
-											</td>
-										</tr>
+        <div class="box-body">
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="example1_wrapper" class="dataTables_wrapper form-inline dt-bootstrap no-footer">
+                        <div class="row">
+                            <div class="col-sm-5"></div>
+                            <div class="col-sm-7">
+                                <div id="example1_filter" class="dataTables_filter">
+                                    <label>
+                                        Search:
+                                        <input class="form-control input-sm" placeholder="" aria-controls="example1" type="search">
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12 table1">
+                                <table id="example1" class="table table-bordered table-striped dataTable no-footer" role="grid" aria-describedby="example1_info">
+                                    <thead>
+                                        <tr role="row">
+                                            <th class="sorting_disabled" rowspan="1" colspan="1" style="width: 260.567px;">ID</th>
+                                            <th class="sorting_disabled" rowspan="1" colspan="1" style="width: 221.567px;">Description</th>
+                                            <th class="sorting_disabled" rowspan="1" colspan="1" style="width: 159.567px;">Edit</th>
+                                            <th class="sorting_disabled" rowspan="1" colspan="1" style="width: 156px;">Delete</th>
+                                        </tr>
+                                    </thead>
 
-										<tr class="odd" role="row">
-											<td>2</td>
-											<td>DM 200</td>
-											<td>
-												<button class="btn btn-primary btn-sm" type="button" data-toggle="modal" data-target="#myModal">Edit</button>
-											</td>
-											<td>
-												<button class="btn btn-danger btn-sm" type="button" data-toggle="modal" data-target="#myDeleteModal">Delete</button>
-											</td>
-										</tr>
+                                    <tbody>
+                                        <tr class="odd" role="row">
+                                            <td>1</td>
+                                            <td>DM 100</td>
+                                            <td>
+                                                <a ui-sref=".editCat">Edit</a>
+                                            </td>
+                                            <td>
+                                                <button class="btn btn-danger btn-sm" type="button" data-toggle="modal" data-target="#myDeleteModal">Delete</button>
 
-										<tr class="odd" role="row">
-											<td>3</td>
-											<td>DM 300</td>
-											<td>
-												<button class="btn btn-primary btn-sm" type="button" data-toggle="modal" data-target="#myModal">Edit</button>
-											</td>
-											<td>
-												<button class="btn btn-danger btn-sm" type="button" data-toggle="modal" data-target="#myDeleteModal">Delete</button>
-											</td>
-										</tr>
+                                                <div id="myDeleteModal" class="modal fade" role="dialog" style="display: none;" aria-hidden="true">
+                                                    <div class="modal-dialog">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <button class="close" type="button" data-dismiss="modal">×</button>
+                                                                <h4 class="modal-title">Delete category </h4>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                <div class="row">
+                                                                    <div class="col-md-12">
+                                                                        <div class="form-group">
+                                                                            <label for="#">
+                                                                                Are you sure you want to delete it?
+                                                                            </label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                    <button class="btn btn-default" type="button" data-dismiss="modal">
+                                                                        Close
+                                                                    </button>
+                                                                    <button class="btn btn-success" type="button">Delete</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
 
-										<tr class="odd" role="row">
-											<td>4</td>
-											<td>DM 400</td>
-											<td>
-												<button class="btn btn-primary btn-sm" type="button" data-toggle="modal" data-target="#myModal">Edit</button>
-											</td>
-											<td>
-												<button class="btn btn-danger btn-sm" type="button" data-toggle="modal" data-target="#myDeleteModal">Delete</button>
-											</td>
-										</tr>
+                                        <tr class="odd" role="row">
+                                            <td>2</td>
+                                            <td>DM 200</td>
+                                            <td>
+                                                <button class="btn btn-primary btn-sm" type="button" data-toggle="modal" data-target="#myModal">Edit</button>
+                                            </td>
+                                            <td>
+                                                <button class="btn btn-danger btn-sm" type="button" data-toggle="modal" data-target="#myDeleteModal">Delete</button>
+                                            </td>
+                                        </tr>
 
-										<tr class="odd" role="row">
-											<td>5</td>
-											<td>DM 500</td>
-											<td>
+                                        <tr class="odd" role="row">
+                                            <td>3</td>
+                                            <td>DM 300</td>
+                                            <td>
+                                                <button class="btn btn-primary btn-sm" type="button" data-toggle="modal" data-target="#myModal">Edit</button>
+                                            </td>
+                                            <td>
+                                                <button class="btn btn-danger btn-sm" type="button" data-toggle="modal" data-target="#myDeleteModal">Delete</button>
+                                            </td>
+                                        </tr>
 
-												<button class="btn btn-primary btn-sm" type="button" data-toggle="modal" data-target="#myModal">Edit</button>
-											</td>
-											<td>
-												<button class="btn btn-danger btn-sm" type="button" data-toggle="modal" data-target="#myDeleteModal">Delete</button>
-											</td>
-										</tr>
-									</tbody>
+                                        <tr class="odd" role="row">
+                                            <td>4</td>
+                                            <td>DM 400</td>
+                                            <td>
+                                                <button class="btn btn-primary btn-sm" type="button" data-toggle="modal" data-target="#myModal">Edit</button>
+                                            </td>
+                                            <td>
+                                                <button class="btn btn-danger btn-sm" type="button" data-toggle="modal" data-target="#myDeleteModal">Delete</button>
+                                            </td>
+                                        </tr>
 
-									<tfoot> </tfoot>
-								</table>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-12">
-								<ul id="pagination-flickr">
-									<li class="previous-off">«Previous</li>
-									<li class="active">1</li>
-									<li><a href="?page=2">2</a></li>
-									<li><a href="?page=3">3</a></li>
-									<li><a href="?page=4">4</a></li>
-									<li><a href="?page=5">5</a></li>
-									<li><a href="?page=6">6</a></li>
-									<li><a href="?page=7">7</a></li>
-									<li class="next"><a href="?page=2">Next »</a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	
-</div>
+                                        <tr class="odd" role="row">
+                                            <td>5</td>
+                                            <td>DM 500</td>
+                                            <td>
+
+                                                <button class="btn btn-primary btn-sm" type="button" data-toggle="modal" data-target="#myModal">Edit</button>
+                                            </td>
+                                            <td>
+                                                <button class="btn btn-danger btn-sm" type="button" data-toggle="modal" data-target="#myDeleteModal">Delete</button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+
+                                    <tfoot> </tfoot>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <ul id="pagination-flickr">
+                                    <li class="previous-off">«Previous</li>
+                                    <li class="active">1</li>
+                                    <li><a href="?page=2">2</a></li>
+                                    <li><a href="?page=3">3</a></li>
+                                    <li><a href="?page=4">4</a></li>
+                                    <li><a href="?page=5">5</a></li>
+                                    <li><a href="?page=6">6</a></li>
+                                    <li><a href="?page=7">7</a></li>
+                                    <li class="next"><a href="?page=2">Next »</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
