@@ -1,7 +1,10 @@
 <!--Khu vực avatar và những nút tùy chỉnh-->
-<div ng-controller="avatarCustomCtrl">
+<div ng-controller="avatarCustomCtrl" class="ava_cus">
+
     <div class="avatar-img wow fadeInLeft">
-        <img style="width: 100%;" alt="example image" src="assets/img/profiles/m6.jpg">
+        <!-- <img style="width: 100%;" alt="example image" src="assets/img/profiles/m6.jpg">-->
+        <div class="ava-cus">
+        </div>
     </div>
     <div class="edit-avatar wow fadeInLeft">
         <a class="btn btn-success" href="#">Edit Avatar</a>
@@ -36,7 +39,7 @@
                         <ul>
                             <li><a ui-sref=".addNews">Add News</a></li>
                             <li><a ui-sref=".editNews">Edit News</a></li>
-                          
+
                         </ul>
                     </li>
                     <li>
@@ -44,7 +47,7 @@
                         <ul>
                             <li><a ui-sref=".addCat">Add cate</a></li>
                             <li><a ui-sref=".editCat">Edit cate</a></li>
-                            
+
                         </ul>
                     </li>
                 </ul>
