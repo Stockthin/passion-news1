@@ -94,8 +94,7 @@
  .content {
      background-color: #ffffff;
  }
- 
- #pagination-flickr li {
+ /*#pagination-flickr li {
      border: 0;
      margin: 0;
      padding: 0;
@@ -142,4 +141,4 @@
  
  #pagination-flickr a:hover {
      border: solid 1px #666666;
- }
+ }*/
