@@ -91,7 +91,12 @@
     <!-- <script type="text/javascript" src="node_modules/angular-ckeditor/bower_components/ckeditor/ckeditor.js"></script> -->
     <script src="//cdn.ckeditor.com/4.5.11/full/ckeditor.js"></script>
     <script src="https://s3-ap-southeast-1.amazonaws.com/naveensingh/posts_data/ckeditor_example/ng-ckeditor.min.js"></script>
-
+    <script type="text/javascript">
+        $(document).on('click', '.clickManage',function () {
+            console.log('abc');
+            $('.feature').toggle();
+        });
+    </script>
 </body>
 
 </html>

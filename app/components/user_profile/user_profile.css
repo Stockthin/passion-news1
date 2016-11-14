@@ -39,7 +39,7 @@
  
  .post_news .form .form-group label {
      font-style: normal;
-     padding-bottom: 13px;
+     /* padding-bottom: 13px; */
      font-size: 17px;
  }
  
@@ -145,4 +145,15 @@ text-decoration:none;
 #pagination-flickr a:hover{
 border:solid 1px #666666;
 }
- 
+
+@media screen and (max-width: 600px) {
+     .user {
+          width : 100%;
+     }
+     .feature {
+          display:  none;
+     }
+     .clickManage {
+          display:  block !important;    
+     }
+}

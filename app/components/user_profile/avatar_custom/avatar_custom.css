@@ -27,6 +27,8 @@
 
 .feature .feature-bot a {
     padding: 0px 30px;
+    margin-bottom: 5px;
+    display: block;
 }
 
 .feature .feature-top {
@@ -50,6 +52,7 @@
 
 .feature .manager-bot li {
     padding: 0px 30px;
+    margin-bottom: 5px;
 }
 
 .feature hr {
